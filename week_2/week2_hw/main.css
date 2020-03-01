@@ -12,6 +12,13 @@ body{
     align-items: right;
 }
 
+.nav-item:hover{
+    background-image: url(images/halo.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
 .navbar-brand img{
     max-height: 60px;
 }
@@ -25,7 +32,7 @@ div[class^="col-"]{
 }
 
 .col-md-4{
-    margin-bottom: 40px !important;
+    margin-bottom: 20px;
 }
 
 .flex-center{
@@ -55,11 +62,6 @@ p{
 
 p, h2, h3{
     font-family: 'Open Sans';
-}
-
-.quote{
-    border: black 10px solid; 
-/* padding-bottom: 10px !important; */
 }
 
 .quote h2{
