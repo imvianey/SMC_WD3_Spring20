@@ -14,8 +14,31 @@ p{
     margin-bottom: 0px;
 }
 
-/* .flex-img{
+h1{
+    font-family: 'Oswald' !important;
+    text-align: center;
+    font-size: 58px;
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 20px;
+    text-align: right;
+}
+
+p, h2, h3{
+    font-family: 'Open Sans';
+}
+
+.flex-center{
     display: flex;
     flex-direction: column;
     justify-content: center;
-} */
+}
+
+.col-md-4{
+    padding-bottom: 40px !important;
+}
