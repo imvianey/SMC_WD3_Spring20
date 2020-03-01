@@ -1,3 +1,21 @@
 .navbar-brand img{
     max-height: 60px;
 }
+
+.container img{
+    width: 100%;
+}
+
+div[class^="col-"]{
+    padding: 20px;
+}
+
+p{
+    margin-bottom: 0px;
+}
+
+/* .flex-img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
