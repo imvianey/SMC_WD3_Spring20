@@ -9,17 +9,23 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .jumbotron{
+                background-size: cover;
+                background-position: center;
+            }
+        </style>
 
     <title>Jumbotron and Featurettes</title>
 </head>
 
 <body>
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid" style="background-image: url(https://thenypost.files.wordpress.com/2019/09/killing-galaxy.jpg?quality=80&strip=all&strip=all)">
         <div class="container">
-            <h1 class="display-4">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+            <h1 class="display-4 text-light">Fluid jumbotron</h1>
+            <p class="lead text-warning">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+            <hr class="my-4 border-white">
+            <p class="text-warning bg-danger">It uses utility classes for typography and spacing to space content out within the larger container.</p>
             <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
         </div>
     </div>
