@@ -1,0 +1,7 @@
+.jumbotron{
+    /* background-image: url(assets/coffee_bean); */
+    background-image: url(assets/coffee_bean.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
