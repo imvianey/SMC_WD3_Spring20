@@ -19,7 +19,7 @@
 
 <body>
     <!-- START BOTTOM NAVBAR -->
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark grey-bg">
         <a class="navbar-brand" href="#">Bottom navbar</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -49,13 +49,11 @@
         </div>
     </nav>
     <!-- /END BOTTOM NAVBAR -->
-    <div class="jumbotron jumbotron-fluid">
+    <div class="jumbotron jumbotron-fluid position-relative white-shadow">
         <div class="container">
-            <h1 class="display-4">Cool Beans Cafe</h1>
-            <p class="lead">We promise you'll like it!</p>
-            <hr class="my-4">
-            <p>Cappuccino latte frappuccino aged cappuccino americano barista frappuccino foam to go wings.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">VIEW MENU</a>
+            <h1 class="display-3">Cool Beans Cafe</h1>
+            <h2 class="lead">You like coffee?</h2>
+            <h2 class="lead">You're in the right place!</h2>
         </div>
     </div>
 
@@ -73,25 +71,13 @@
             </div>
             <div class="col-md-5 order-md-1">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="assets/pouring-sq-500.jpg">
+                    <source media="(min-width: 1200px)" srcset="assets/pouring-650.jpg">
                     <source media="(min-width: 768px)" srcset="assets/pouring-sq-370.jpg">
                     <img src="assets/pouring-sq-500.jpg" alt="Barista pouring milk in coffee."
                         class="img-fluid mx-auto">
                 </picture>
             </div>
         </div>
-
-        <hr class="featurette-divider">
-
-        <!-- RESPONSIVE IMAGE SWEET BUNS -->
-        <div class="container specials">
-            <div class="row">
-                <h3 class="top-left">Join us for<br>Happy Hour!</h3>
-                <h3 class="bottom-center">Weekdays 2 - 5 pm</h3>
-        <img src="assets/cheers.jpg" class="img-fluid" alt="Three hands with mugs full of coffee drinks.">
-    </div>
-    </div>
-    <!-- END RESPONSIVE IMAGE SWEET BUNS -->
 
     <hr class="featurette-divider">
 
@@ -102,11 +88,12 @@
                     euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus,
                     tellus ac cursus commodo.</p>
             </div>
+            
             <div class="col-md-5 order-md-1">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="assets/pastry-sq-500.jpg">
+                    <source media="(min-width: 1200px)" srcset="assets/pastry-650.jpg">
                     <source media="(min-width: 768px)" srcset="assets/pastry-sq-370.jpg">
-                    <img src="assets/pastry-sq-500.jpg" alt="Barista pouring milk in coffee."
+                    <img src="assets/pastry-sq-500.jpg" alt="Yummy pastry!"
                         class="img-fluid mx-auto">
                 </picture>
             </div>
@@ -114,20 +101,32 @@
 
         <hr class="featurette-divider">
 
+        <!-- RESPONSIVE IMAGE SWEET BUNS -->
+        <div class="container specials">
+            <div class="row">
+                <h3 class="top-left p-4">Join us for<br>Happy Hour!</h3>
+                <h3 class="bottom-center p-4">Weekdays 2 - 5 pm</h3>
+        <img src="assets/cheers.jpg" class="img-fluid" alt="Three hands with mugs full of coffee drinks.">
+    </div>
+    </div>
+    <!-- END RESPONSIVE IMAGE SWEET BUNS -->
+
+    <hr class="featurette-divider">
+
         <div class="row featurette">
-            <div class="col-md-7">
+            <div class="col-md-5">
                 <h2 class="featurette-heading">Location</h2>
                 <p>1234 W. Aromatic Way</p>
                 <p>Santa Monica, CA 90404</p>
-                <h2 class="featurette-heading">Hours</h2>
+                <h2 class="featurette-heading mt-5">Hours</h2>
                 <p>Monday - Friday 7:00 AM - 8:00 PM</p>
                 <p>Saturday - Sunday 8:00 AM - 4:00 PM</p>
             </div>
-            <div class="col-md-5">
+            <div class="col-md-7">
                 <picture>
-                    <source media="(min-width: 1200px)" srcset="assets/chairs-500.jpg">
+                    <source media="(min-width: 1200px)" srcset="assets/chairs-650.jpg">
                     <source media="(min-width: 768px)" srcset="assets/chairs-370.jpg">
-                    <img src="assets/chairs-500.jpg" alt="Coffee on a table with plants." class="img-fluid mx-auto">
+                    <img src="assets/chairs-500.jpg" alt="Chairs in a coffee shop." class="img-fluid float-right">
                 </picture>
             </div>
         </div>
@@ -137,10 +136,10 @@
         <!-- RESPONSIVE IMAGE SWEET BUNS -->
         <div class="container specials">
             <div class="row">
-                <div class="top-left">
+                <div class="top-left p-4">
                 <h3>Sweetest buns</h3>
                 <h3>in town!</h3>
-                <p><span class="text-muted">Try them for $6.50</span></p>
+                <p><span class="text-light">Try them for $2.50</span></p>
             </div>
         <img src="assets/buns.jpg" class="img-fluid" alt="Cinnamon bun.">
     </div>
@@ -149,7 +148,7 @@
     <hr class="featurette-divider">
         <!--TABLE MENU-->
         <table class="table table-striped">
-            <h2>MENU</h2>
+            <h2 class="d-flex justify-content-center">MENU</h2>
 
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item">

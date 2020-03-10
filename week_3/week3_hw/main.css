@@ -1,9 +1,25 @@
 .jumbotron{
-    /* background-image: url(assets/coffee_bean); */
     background-image: url(assets/bkg-lotsbeans.jpg);
     background-size: cover;
     background-position: center;
-    color: black;
+    text-align: center;
+}
+
+.jumbotron h1 h2{
+    font-size: 2vw;
+}
+
+.white-shadow{
+    text-shadow: 3px 3px 8px #0b0d0c;
+    color: #e1e2e4;
+}
+
+.grey-bg{
+    background-color: #6e8387;
+}
+
+.grey{
+    color: #6e8387;
 }
 
 .specials {
@@ -29,7 +45,7 @@
   .bottom-center {
     position: absolute;
     bottom: 8px;
-    left: 16px;
+    right: 16px;
     text-align: center;
   }
 
@@ -38,7 +54,22 @@
     font-weight: 700 !important;
 }
 
+h3{
+    font-size: 5vw;
+}
+
+span{
+    font-size: 3vw;
+}
+
 p{
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
+}
+
+@media(min-width: 768px){
+    .jumbotron h2{
+        color: #201311;
+        text-shadow: none;
+    }
 }
