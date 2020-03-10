@@ -19,43 +19,50 @@
 
 <body>
     <!-- START BOTTOM NAVBAR -->
-    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark grey-bg">
-        <a class="navbar-brand" href="#">Bottom navbar</a>
+    <nav class="navbar fixed-bottom navbar-expand-sm navbar-dark brown-bg">
+        <a class="navbar-brand" href="#home">Cool Beans Cafe</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link" href="#location">Location</a>
                 </li>
                 <li class="nav-item dropup">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-toggle="dropdown"
-                        aria-haspopup="true" aria-expanded="false">Dropup</a>
+                    <a class="nav-link dropdown-toggle" href="#menu" id="dropdown10" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Menu</a>
                     <div class="dropdown-menu" aria-labelledby="dropdown10">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#drinks">Drinks</a>
+                        <a class="dropdown-item" href="#pastries">Pastries</a>
                     </div>
+                </li>
+            </ul>
+            <ul class="navbar-nav ml-auto flex-row">
+                <li class="nav-item active p-2">
+                    <a class="nav-link"><img src="assets/facebook.png" alt="facebook icon"></a>
+                </li>
+                <li class="nav-item active p-2">
+                    <a class="nav-link"><img src="assets/instagram.png" alt="instagram icon"></a>
+                </li>
+                <li class="nav-item active p-2">
+                    <a class="nav-link"><img src="assets/twitter.png" alt="twitter icon"></a>
                 </li>
             </ul>
         </div>
     </nav>
     <!-- /END BOTTOM NAVBAR -->
-    <div class="jumbotron jumbotron-fluid position-relative white-shadow">
+    <a name="home"><div class="jumbotron jumbotron-fluid position-relative white-shadow">
         <div class="container">
             <h1 class="display-3">Cool Beans Cafe</h1>
             <h2 class="lead">You like coffee?</h2>
             <h2 class="lead">You're in the right place!</h2>
         </div>
-    </div>
+    </div></a>
 
     <div class="container">
         <!-- START THE FEATURETTES -->
@@ -64,7 +71,7 @@
 
         <div class="row featurette">
             <div class="col-md-7">
-                <h2 class="featurette-heading">We make darn good coffee!</h2>
+                <a name="about"><h2 class="featurette-heading">We make darn good coffee!</h2></a>
                 <p class="lead">French press, viennese, french press pumpkin spice qui acerbic whipped. Dripper
                     kopi-luwak dark half and half barista et latte siphon. Id dripper and wings plunger pot dripper ut
                     to go dark seasonal.</p>
@@ -115,7 +122,7 @@
 
         <div class="row featurette">
             <div class="col-md-5">
-                <h2 class="featurette-heading">Location</h2>
+                <a name="location"><h2 class="featurette-heading">Location</h2></a>
                 <p>1234 W. Aromatic Way</p>
                 <p>Santa Monica, CA 90404</p>
                 <h2 class="featurette-heading mt-5">Hours</h2>
@@ -148,21 +155,17 @@
     <hr class="featurette-divider">
         <!--TABLE MENU-->
         <table class="table table-striped">
-            <h2 class="d-flex justify-content-center">MENU</h2>
-
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#drinks" data-toggle="tab">Drinks</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#pastries" data-toggle="tab">Pastries</a></li>
-            </ul>
+            <a name="menu"><h2 class="d-flex justify-content-center">MENU</h2></a>
 
             <div class="tab-content">
                 <div class="tab-pane fade active" id="drinks">
-                    <thead class="thead-dark">
-                        <tr>
+                    <thead class="brown-bg">
+                        <a name="drinks"><tr>
                             <th scope="col">DRINKS</th>
-                        </tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr></a>
                     </thead>
                     <thead>
                         <tr>
@@ -225,43 +228,50 @@
                 </div>
 
                 <div class="tab-pane fade" id="pastries">
-                    <thead class="thead-dark">
-                        <tr>
+                    <thead class="brown-bg">
+                        <a name="pastries"></a><tr>
                             <th scope="col">PASTRIES</th>
-                        </tr>
-                    </thead>
-                    <thead>
-                        <tr>
                             <th scope="col"></th>
-                            <th scope="col">8oz</th>
-                            <th scope="col">12oz</th>
-                            <th scope="col">16oz</th>
-                        </tr>
+                            <th scope="col"></th>
+                            <th scope="col"></th>
+                        </tr></a>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row">Drip Coffee</th>
-                            <td>$1.75</td>
-                            <td>$2.25</td>
-                            <td>$3.50</td>
+                            <th scope="row">Croissant</th>
+                            <td></td>
+                            <td></td>
+                            <td>$2.50</td>
                         </tr>
                         <tr>
-                            <th scope="row">Americano</th>
-                            <td>$2.75</td>
-                            <td>$3.25</td>
-                            <td>$4.50</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Espresso</th>
-                            <td>$2.75</td>
-                            <td>$3.25</td>
-                            <td>$4.50</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">Cappuccino</th>
+                            <th scope="row">Muffin</th>
+                            <td></td>
+                            <td></td>
                             <td>$3.75</td>
-                            <td>$4.50</td>
-                            <td>$5.75</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cookie</th>
+                            <td></td>
+                            <td></td>
+                            <td>$1.50</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Cinnamon Bun</th>
+                            <td></td>
+                            <td></td>
+                            <td>$2.75</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Danish</th>
+                            <td></td>
+                            <td></td>
+                            <td>$3.25</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td></td>
+                            <td></td>
+                            <td></td>
                         </tr>
                     </tbody>
                 </div>

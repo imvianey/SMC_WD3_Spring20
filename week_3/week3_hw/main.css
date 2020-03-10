@@ -5,8 +5,8 @@
     text-align: center;
 }
 
-.jumbotron h1 h2{
-    font-size: 2vw;
+.jumbotron h1, .jumbotron h2{
+    color: #e1e2e4;
 }
 
 .white-shadow{
@@ -14,12 +14,14 @@
     color: #e1e2e4;
 }
 
-.grey-bg{
-    background-color: #6e8387;
+.brown-bg{
+    background-color: #201311;
+    color: #fffffb;
 }
 
-.grey{
-    color: #6e8387;
+
+.brown, h2{
+    color: #201311;
 }
 
 .specials {
@@ -49,7 +51,7 @@
     text-align: center;
   }
 
-  h1, h2, h3{
+  h1, h2, h3, .navbar-brand{
     font-family: 'Spartan', sans-serif;
     font-weight: 700 !important;
 }
@@ -62,9 +64,13 @@ span{
     font-size: 3vw;
 }
 
-p{
+p, .navbar-nav{
     font-family: 'Spartan', sans-serif;
     font-weight: 400;
+}
+
+.navbar-nav img{
+    height: 40px;
 }
 
 @media(min-width: 768px){
