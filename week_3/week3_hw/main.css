@@ -1,7 +1,44 @@
 .jumbotron{
     /* background-image: url(assets/coffee_bean); */
-    background-image: url(assets/coffee_bean.jpg);
+    background-image: url(assets/bkg-lotsbeans.jpg);
     background-size: cover;
     background-position: center;
+    color: black;
+}
+
+.specials {
+    position: relative;
+    text-align: center;
     color: white;
+  }
+
+.top-left {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-align: left;
+  }
+
+  .top-center {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+    text-align: center;
+  }
+
+  .bottom-center {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    text-align: center;
+  }
+
+  h1, h2, h3{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 700 !important;
+}
+
+p{
+    font-family: 'Spartan', sans-serif;
+    font-weight: 400;
 }
