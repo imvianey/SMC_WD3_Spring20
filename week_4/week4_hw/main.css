@@ -1,0 +1,11 @@
+.jumbotron{
+    background-image: url(assets/oppy-mars1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* .jumbotron{
+    background-image: url(assets/oppy-mars2.jpg);
+    background-size: cover;
+    background-position: top;
+} */
