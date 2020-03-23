@@ -9,6 +9,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link href="assets/fontawesome/css/all.css" rel="stylesheet">
     <!-- MAIN CSS -->
     <link href="main.css" rel="stylesheet">
 
@@ -21,17 +23,19 @@
         <a class="navbar-brand" href="#">OPPORTUNITY ROVER</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <i class="fas fa-rocket"></i>
+            <!-- <span class="navbar-toggler-icon"><i class="fas fa-rocket"></i></span> -->
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Mission<span class="sr-only">(current)</span></a>
+
+                <li class="nav-item my-2 my-md-0">
+                    <a class="nav-link" href="#">Mission</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-2 mb-md-0">
                     <a class="nav-link" href="#">Data</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mb-2 mb-md-0">
                     <a class="nav-link" href="#">Design</a>
                 </li>
             </ul>
@@ -40,12 +44,13 @@
     <!-- /END NAVBAR -->
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
-            <h1 class="display-4">Opportunity</h1>
-            <p class="lead">The longest running Mars rover.</p>
-            <p class="lead">Planned: 90 sols (92.5 Earth days)</p>
-            <p class="lead">Final: 5,352 sols (5498 Earth days from landing to mission end; 15 Earth years or 8 Martian years)</p>
-            <hr class="my-4">
-            <p>View images of Mars captured by Opportunity!</p>
+            <h1 class="display-3">Opportunity</h1>
+            <div class="blurb col-md-5 mb-3">
+                <p class="lead">The longest running Mars rover. Ran for 5,352 sols, 5498 Earth days or 15 Earth years.
+                </p>
+                <hr class="my-4">
+                <p>View images of Mars captured by Opportunity!</p>
+            </div>
             <a class="btn btn-primary btn-lg" href="#" role="button">View Images</a>
         </div>
     </div>
@@ -54,14 +59,15 @@
         <!-- START COPY -->
         <div class="row">
             <div class="col">
-                <h1>Header</h1>
-                <h2>Subheader</h2>
+                <h1>Opportunity Blasts OfF To Mars</h1>
                 <p>
-                    Opportunity, also known as MER-B (Mars Exploration Rover – B) or MER-1, and nicknamed "Oppy", is
+                    Opportunity, also known as MER-B (Mars Exploration Rover – B) or MER-1, and nicknamed
+                    <strong>"Oppy"</strong>, is
                     a robotic rover that was active on Mars from 2004 until the middle of 2018. Launched on July 7,
                     2003, as part of NASA's Mars Exploration Rover program, it landed in Meridiani Planum on January 25,
                     2004, three weeks after its twin Spirit (MER-A) touched down on the other side of the planet.
                 </p>
+                <h2 class="mt-4">On A Mission</h2>
                 <p>
                     With a planned 90-sol duration of activity (slightly more than 90 Earth days), Spirit functioned
                     until it got stuck in 2009 and ceased communications in 2010, while Opportunity was able to stay
@@ -94,50 +100,68 @@
             </div>
         </div>
         <!-- END COPY -->
-         <!-- START CARD GROUP -->
-         <div class="card-group row mt-4">
+        <!-- START CARD GROUP -->
+        <div class="card-group row mt-4">
             <div class="col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/el-capitan.jpg" class="card-img-top" alt="El Capitan Crater">
-                <div class="card-body">
-                    <h5 class="card-title">El Capitan</h5>
-                    <p class="card-text">This image, taken by the panoramic camera on the Mars Exploration Rover Opportunity, shows a close up of the rock dubbed "El Capitan," located in the rock outcrop at Meridiani Planum, Mars. This image shows fine, parallel lamination in the upper area of the rock, which also contains scattered sphere-shaped objects ranging from 1 to 2 millimeters (.04 to .08 inches) in size.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                <div class="card">
+                    <img src="assets/el-capitan.jpg" class="card-img-top" alt="El Capitan Crater">
+                    <div class="card-body">
+                        <h5 class="card-title">El Capitan</h5>
+                        <p class="card-text">This image, taken by the panoramic camera on the Mars Exploration Rover
+                            Opportunity, shows a close up of the rock dubbed "El Capitan," located in the rock outcrop
+                            at Meridiani Planum, Mars. This image shows fine, parallel lamination in the upper area of
+                            the rock, which also contains scattered sphere-shaped objects ranging from 1 to 2
+                            millimeters (.04 to .08 inches) in size.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/close-up.jpg" class="card-img-top" alt="Soil close up from Mars.">
-                <div class="card-body">
-                    <h5 class="card-title">Martian Soil</h5>
-                    <p class="card-text">An extreme close-up of round, blueberry-shaped formations in the martian soil, captured in 2004. Martian soil is the fine regolith found on the surface of Mars. Its properties can differ significantly from those of terrestrial soil, including its toxicity due to the presence of perchlorates. The term Martian soil typically refers to the finer fraction of regolith. 
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="assets/close-up.jpg" class="card-img-top" alt="Soil close up from Mars.">
+                    <div class="card-body">
+                        <h5 class="card-title">Martian Soil</h5>
+                        <p class="card-text">An extreme close-up of round, blueberry-shaped formations in the martian
+                            soil, captured in 2004. Martian soil is the fine regolith found on the surface of Mars. Its
+                            properties can differ significantly from those of terrestrial soil, including its toxicity
+                            due to the presence of perchlorates. The term Martian soil typically refers to the finer
+                            fraction of regolith.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/crater.gif" class="card-img-top" alt="Image taken by Opportunity of wharton Ridge on Mars.">
-                <div class="card-body">
-                    <h5 class="card-title">Opportunity Reaches Endurance Crater</h5>
-                    <p class="card-text">This view in approximately true color reveals details in an impact crater informally named "Fram" in the Meridian Planum region of Mars. The picture is a mosaic of frames taken by the panoramic camera on NASA's Mars Exploration Rover Opportunity during the rover's 88th martian day on Mars, on April 23, 2004. The crater spans about 8 meters (26 feet) in diameter.
-                    </p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="assets/crater.gif" class="card-img-top"
+                        alt="Image taken by Opportunity of wharton Ridge on Mars.">
+                    <div class="card-body">
+                        <h5 class="card-title">Oppy Reaches Endurance Crater</h5>
+                        <p class="card-text">This view in approximately true color reveals details in an impact crater
+                            informally named "Fram" in the Meridian Planum region of Mars. The picture is a mosaic of
+                            frames taken by the panoramic camera on NASA's Mars Exploration Rover Opportunity during the
+                            rover's 88th martian day on Mars, on April 23, 2004. The crater spans about 8 meters (26
+                            feet) in diameter.
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6 col-lg-3">
-            <div class="card">
-                <img src="assets/last-image.jpg" class="card-img-top" alt="Oppy's final image.">
-                <div class="card-body">
-                    <h5 class="card-title">Oppy's Final Image</h5>
-                    <p class="card-text">Opportunity took this image with the left eye of the Pancam, with its solar filter pointed at the Sun. But since the dust storm blotted out the Sun, the image is dark. The white speckles are noise from the camera. All Pancam images have noise in them, but the darkness makes it more apparent. The transmission stopped before the full image was transmitted, leaving the bottom of the image incomplete, represented here as black pixels</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="col-md-6 col-lg-3">
+                <div class="card">
+                    <img src="assets/last-image.jpg" class="card-img-top" alt="Oppy's final image.">
+                    <div class="card-body">
+                        <h5 class="card-title">Oppy's Final Image</h5>
+                        <p class="card-text">Opportunity took this image with the left eye of the Pancam, with its solar
+                            filter pointed at the Sun. But since the dust storm blotted out the Sun, the image is dark.
+                            The white speckles are noise from the camera. All Pancam images have noise in them, but the
+                            darkness makes it more apparent. The transmission stopped before the full image was
+                            transmitted, leaving the bottom of the image incomplete, represented here as black pixels
+                        </p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
         <!-- END CARD GROUP -->
     </div>
