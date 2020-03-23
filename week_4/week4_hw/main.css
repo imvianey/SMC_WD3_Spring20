@@ -27,32 +27,33 @@ body {
     border-color: #0a090c;
     color: #4F9CA1;
 }
+
 /* END NAVBAR */
 /* START JUMBOTRON */
-.jumbotron{
+.jumbotron {
     background-image: url(assets/oppy-mars1.jpg);
     background-size: cover;
     background-position: center top;
     padding: 2rem 2rem;
 }
 
-.jumbotron h1{
+.jumbotron h1 {
     font-size: 12vw;
     text-align: center;
     color: #0a090c;
 }
 
-.jumbotron .lead{
+.jumbotron .lead {
     font-weight: 700;
 }
 
-.blurb{
+.blurb {
     background-color: rgba(241, 238, 239, 0.65);
     padding: 15px;
     color: #0a090c;
 }
 
-.blurb p{
+.blurb p {
     margin: 0px;
 }
 
@@ -70,9 +71,10 @@ hr {
     border-color: #4F9CA1;
     font-family: 'Titillium Web', sans-serif;
 }
+
 /* END JUMBOTRON */
 
-.card{
+.card {
     margin-bottom: 15px;
 }
 
@@ -92,20 +94,26 @@ hr {
     border-color: #185154;
 }
 
-.navbar-brand, .nav-item, h1, h2, h5, .btn{
+.navbar-brand,
+.nav-item,
+h1,
+h2,
+h5,
+.btn {
     font-family: 'Titillium Web', sans-serif;
     text-transform: uppercase;
 }
 
-.h1, h1 {
+.h1,
+h1 {
     font-size: 3rem;
 }
 
-h5{
+h5 {
     text-align: center;
 }
 
-p{
+p {
     font-family: 'Open Sans', sans-serif;
 }
 
