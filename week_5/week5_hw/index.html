@@ -10,18 +10,20 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="main.css">
-  <title>Cloud9</title>
+  <link href="assets/fontawesome/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="main.css">
+  <title>Cloud 9 Superstore</title>
 </head>
 
 <body>
   <header>
     <!-- START NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a class="navbar-brand" href="#">Cloud9</a>
+      <a class="navbar-brand" href="#"><img src="assets/cloud9-logo.png" alt="Cloud 9 Logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-        <i class="fas fa-rocket"></i>
+        <i class="fas fa-bars"></i>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav ml-auto">
@@ -44,51 +46,41 @@
       <div class="row">
         <div class="col">
           <div class="cart">
-            <h4 class="d-flex justify-content-between align-items-center my-3">
+            <h3 class="side-top mb-4">
               Your cart
-              <span class="badge badge-secondary badge-pill">3</span>
-            </h4>
+              <span class="badge badge-secondary badge-pill float-right">3</span>
+            </h3>
             <ul class="list-group mb-3">
               <li class="list-group-item d-flex justify-content-between lh-condensed">
                 <div>
-                  <h6 class="my-0">Product name</h6>
-                  <small class="text-muted">Brief description</small>
+                  <h6 class="my-0">Hand Soap</h6>
                 </div>
-                <span class="text-muted">$12</span>
+                <span class="text-muted">$2.49</span>
               </li>
               <li class="list-group-item d-flex justify-content-between lh-condensed">
                 <div>
-                  <h6 class="my-0">Second product</h6>
-                  <small class="text-muted">Brief description</small>
+                  <h6 class="my-0">Multi-Purpose Cleaner</h6>
                 </div>
-                <span class="text-muted">$8</span>
+                <span class="text-muted">$3.48</span>
               </li>
               <li class="list-group-item d-flex justify-content-between lh-condensed">
                 <div>
-                  <h6 class="my-0">Third item</h6>
-                  <small class="text-muted">Brief description</small>
+                  <h6 class="my-0">Toilet Paper</h6>
                 </div>
-                <span class="text-muted">$5</span>
-              </li>
-              <li class="list-group-item d-flex justify-content-between bg-light">
-                <div class="text-success">
-                  <h6 class="my-0">Promo code</h6>
-                  <small>EXAMPLECODE</small>
-                </div>
-                <span class="text-success">-$5</span>
+                <span class="text-muted">$4.80</span>
               </li>
               <li class="list-group-item d-flex justify-content-between">
                 <span>Total (USD)</span>
-                <strong>$20</strong>
+                <strong>$10.77</strong>
               </li>
             </ul>
             <button class="btn btn-primary btn-lg btn-block proceed">Proceed to Checkout</button>
           </div>
 
-          <form action="" method="POST" class="needs-validation" id="checkoutForm" novalidate>
+          <form action="" method="POST" class="needs-validation my-5" id="checkoutForm" novalidate>
             <!-- SHIPPING ADDRESS -->
-            <fieldset id="shipping">
-              <h3>Shipping Address</h3>
+            <fieldset id="shipping" class="mt-4 col-md-8 order-md-1">
+              <h3 class="mb-4">Shipping Address</h3>
               <div class="form-row">
                 <div class="form-group col-md-6">
                   <label for="firstName">First Name</label>
@@ -103,6 +95,8 @@
                   <div class="invalid-feedback">
                     This field is required.
                   </div>
+                  <div class="valid-feedback"><small class="form-text text-muted">Complete field to go to the next
+                      step.</small></div>
                 </div>
               </div>
 
@@ -138,149 +132,153 @@
                     This field is required.
                   </div>
                 </div>
-              </div>              
+              </div>
+              <small id="formHelp" class="form-text text-muted float-right">Complete all fields to continue.</small>
             </fieldset>
 
-            <fieldset id="billing">
-              <hr class="my-4">
-            <div class="custom-control custom-checkbox mb-4">
-              <input type="checkbox" class="custom-control-input" id="check-same">
-              <label class="custom-control-label" for="check-same">Shipping address is the same as my billing
-                address</label>
-            </div>
-
-                <h3>Billing Address</h3>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="firstName-billing">First Name</label>
-                    <input type="text" class="form-control" id="firstName-billing" required>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="lastName-billing">Last Name</label>
-                    <input type="text" class="form-control" id="lastName-billing" required>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
-                  </div>
-                </div>
-
-                <div class="form-group">
-                  <label for="inputAddress-billing">Address</label>
-                  <input type="text" class="form-control" id="inputAddress-billing" placeholder="1234 Main St" required>
+            <!-- BILLING ADDRESS -->
+            <fieldset id="billing" class="mt-4 col-md-8 order-md-1">
+              <hr class="my-5">
+              <h3 class="mb-4">Billing Address</h3>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="firstName-billing">First Name</label>
+                  <input type="text" class="form-control" id="firstName-billing" required>
                   <div class="invalid-feedback">
                     This field is required.
                   </div>
                 </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity-billing">City</label>
-                    <input type="text" class="form-control" id="inputCity-billing" required>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
+                <div class="form-group col-md-6">
+                  <label for="lastName-billing">Last Name</label>
+                  <input type="text" class="form-control" id="lastName-billing" required>
+                  <div class="invalid-feedback">
+                    This field is required.
                   </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState-billing">State</label>
-                    <select name="inputState-billing" id="inputState-billing" class="form-control" required>
-                      <option selected placeholder="Choose..."></option>
-                      <option>California</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="inputAddress-billing">Address</label>
+                <input type="text" class="form-control" id="inputAddress-billing" placeholder="1234 Main St" required>
+                <div class="invalid-feedback">
+                  This field is required.
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputCity-billing">City</label>
+                  <input type="text" class="form-control" id="inputCity-billing" required>
+                  <div class="invalid-feedback">
+                    This field is required.
                   </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip-billing">Zip</label>
-                    <input type="text" class="form-control" id="inputZip-billing" required>
+                </div>
+                <div class="form-group col-md-4">
+                  <label for="inputState-billing">State</label>
+                  <select name="inputState-billing" id="inputState-billing" class="form-control" required>
+                    <option selected placeholder="Choose..."></option>
+                    <option>California</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+                <div class="form-group col-md-2">
+                  <label for="inputZip-billing">Zip</label>
+                  <input type="text" class="form-control" id="inputZip-billing" required>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <div class="custom-control custom-checkbox mb-4">
+                  <input type="checkbox" class="custom-control-input" id="check-same">
+                  <label class="custom-control-label" for="check-same">Shipping address is the same as my billing
+                    address</label>
+                </div>
+                <small id="formHelp" class="form-text text-muted float-right">Complete all fields to continue.</small>
+              </div>
+            </fieldset>
+
+            <!-- CREDIT CARD -->
+            <fieldset id="credit" class="mt-4 col-md-8 order-md-1">
+              <hr class="my-5">
+              <h3 class="mb-4">Credit Card</h3>
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="fullName">Name</label>
+                  <input type="text" class="form-control" id="fullName" aria-describedby="nameHelp" required>
+                  <small id="nameHelp" class="form-text text-muted">Name as it appears on your credit card.</small>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+
+                <div class="form-group col-md-6">
+                  <label for="cardNmber">Credit Card Number</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="creditIcon"><i class="far fa-credit-card"></i></span>
+                    </div>
+                    <input type="text" class="form-control" placeholder="0000 0000 0000 0000" required>
                     <div class="invalid-feedback">
                       This field is required.
                     </div>
                   </div>
                 </div>
-              </fieldset>
+              </div>
 
-              <!-- CREDIT CARD -->
-              <fieldset id="credit">
-                <hr class="my-4">
-                <h3>Credit Card</h3>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="fullName">Name</label>
-                    <input type="text" class="form-control" id="fullName" aria-describedby="nameHelp" required>
-                    <small id="nameHelp" class="form-text text-muted">Name as it appears on your credit card.</small>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
-                  </div>
-
-                  <div class="form-group col-md-6">
-                    <label for="cardNmber">Credit Card Number</label>
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="creditIcon">@</span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="0000 0000 0000 0000" required>
-                      <div class="invalid-feedback">
-                        This field is required.
-                      </div>
-                    </div>
+              <div class="form-row mb-3">
+                <div class="form-group col-4">
+                  <label for="inputMonth">Month</label>
+                  <select id="inputMonth" class="form-control" required>
+                    <option selected placeholder="Choose..."></option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    This field is required.
                   </div>
                 </div>
 
-                <div class="form-row">
-                  <div class="form-group col-md-4">
-                    <label for="inputMonth">Month</label>
-                    <select id="inputMonth" class="form-control" required>
-                      <option selected placeholder="Choose..."></option>
-                      <option>1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                      <option>5</option>
-                      <option>6</option>
-                      <option>7</option>
-                      <option>8</option>
-                      <option>9</option>
-                      <option>10</option>
-                      <option>11</option>
-                      <option>12</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
-                  </div>
-
-                  <div class="form-group col-md-4">
-                    <label for="inputYear">Year</label>
-                    <select id="inputYear" class="form-control" required>
-                      <option selected placeholder="Choose..."></option>
-                      <option>2021</option>
-                      <option>2022</option>
-                      <option>2023</option>
-                      <option>2024</option>
-                      <option>2025</option>
-                    </select>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
-                  </div>
-
-                  <div class="form-group col-md-4">
-                    <label for="cvv">CVV</label>
-                    <input type="text" class="form-control" id="CVV" required>
-                    <div class="invalid-feedback">
-                      This field is required.
-                    </div>
+                <div class="form-group col-4">
+                  <label for="inputYear">Year</label>
+                  <select id="inputYear" class="form-control" required>
+                    <option selected placeholder="Choose..."></option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    This field is required.
                   </div>
                 </div>
 
-<button class="btn btn-primary btn-lg btn-block" type="submit">Proceed to Checkout</button>
+                <div class="form-group col-4">
+                  <label for="cvv">CVV</label>
+                  <input type="text" class="form-control" id="CVV" required>
+                  <div class="invalid-feedback">
+                    This field is required.
+                  </div>
+                </div>
+              </div>
 
-              </fieldset>
-            </form>
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Checkout</button>
+
+            </fieldset>
+          </form>
 
 
 

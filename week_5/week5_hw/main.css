@@ -1,3 +1,58 @@
-#shipping, #billing, #credit {
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+.bg-dark {
+    background-color: #2377B7 !important;
+}
+
+.btn-primary {
+    color: #2377B7;
+    background-color: #E2BF1F;
+    border: none;
+    text-transform: uppercase;
+}
+
+.btn-primary:hover {
+    color: #2377B7;
+    background-color: #E2BF1F;
+    border-color: #2377B7;
+}
+
+.navbar-brand img {
+    width: 60px;
+}
+
+#shipping,
+#billing,
+#credit {
     display: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    color: #2377B7;
+    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
+}
+
+.badge-secondary {
+    color: #2377B7;
+    background-color: #E2BF1F;
+}
+
+.badge-pill {
+    padding-top: 0.5em;
+}
+
+.input-group-text {
+    background-color: #2377B7;
+    color: #E2BF1F;
+}
+
+.side-top {
+    margin-top: 3rem;
 }
