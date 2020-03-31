@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link rel="stylesheet" href="main.css">
   <title>Cloud9</title>
 </head>
 
@@ -42,7 +43,7 @@
     <div class="container">
       <div class="row">
         <div class="col">
-          <div>
+          <div class="cart">
             <h4 class="d-flex justify-content-between align-items-center my-3">
               Your cart
               <span class="badge badge-secondary badge-pill">3</span>
@@ -81,10 +82,9 @@
                 <strong>$20</strong>
               </li>
             </ul>
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Proceed to Checkout</button>
+            <button class="btn btn-primary btn-lg btn-block proceed">Proceed to Checkout</button>
           </div>
 
-          <hr class="my-4">
           <form action="" method="POST" class="needs-validation" id="checkoutForm" novalidate>
             <!-- SHIPPING ADDRESS -->
             <fieldset id="shipping">
@@ -138,13 +138,10 @@
                     This field is required.
                   </div>
                 </div>
-              </div>
-
-              <button type="button" class="btn btn-info next">Next</button>
-              
+              </div>              
             </fieldset>
 
-            <fieldset id="billing" class="d-none">
+            <fieldset id="billing">
               <hr class="my-4">
             <div class="custom-control custom-checkbox mb-4">
               <input type="checkbox" class="custom-control-input" id="check-same">
@@ -203,13 +200,11 @@
                     </div>
                   </div>
                 </div>
-
-                <button type="button" class="btn btn-info next">Next</button>
               </fieldset>
 
               <!-- CREDIT CARD -->
-              <hr class="my-4">
-              <fieldset id="credit" class="d-none">
+              <fieldset id="credit">
+                <hr class="my-4">
                 <h3>Credit Card</h3>
                 <div class="form-row">
                   <div class="form-group col-md-6">
@@ -282,9 +277,9 @@
                   </div>
                 </div>
 
-              </fieldset>
+<button class="btn btn-primary btn-lg btn-block" type="submit">Proceed to Checkout</button>
 
-              <button class="btn btn-primary btn-lg btn-block" type="submit">Proceed to Checkout</button>
+              </fieldset>
             </form>
 
 

@@ -1,10 +1,10 @@
   $(document).ready(function () {
     //   FORM VALIDATION
-    // $("form.needs-validation").submit(function(event){
-    //     event.preventDefault();
+    $("form.needs-validation").submit(function(event){
+        event.preventDefault();
   
-    //       $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
-    //   })
+          $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
+      })
 
     // CHECKBOX BILLING SAME
     $('#check-same').click(function () {
@@ -28,27 +28,42 @@
     });
 
 
-// NEXT BUTTON
-    // $(".next" ).click(function() {
-    //     $( "#billing" ).removeClass( "d-none" );
-    //   });
+// REMOVE ITEM LIST WITH BUTTON CLICKS
+$( ".proceed" ).click(function() {
+    $( ".cart" ).hide();
+  });
 
-    //   $("#billing .next" ).click(function() {
-    //     $( "#credit" ).removeClass( "d-none" );
-    //   });
+//   SHOW SHIPPING SECTION WITH BUTTON CLICK
+  $( ".proceed" ).click(function() {
+    $( "#shipping" ).show();
+  });
 
-    // $("#shipping input").on("keyup change", function(){
-    //     var inputValidate = true;
-    //     $("#shipping input").each(function(index, element){   		
-    //         if ($(element).val() == "")
-    //            inputValidate = false;
-    //     });
+    // VALIDATE FORM FIELDSET FOR NEXT FIELDSET TO OPEN
+    $("#shipping input").on("keyup change", function(){
+        var inputValidate = true;
+        $("#shipping input").each(function(index, element){   		
+            if ($(element).val() == "")
+               inputValidate = false;
+        });
         
-    //     if (inputValidate)
-    //         $("#billing").removeClass("d-none");
-    //     else
-    //         $("#billing").hide();
-    // });
+        if (inputValidate)
+            $("#billing").show("slow");
+        else
+            $("#billing").hide();
+    });
+
+    $("#billing input").on("keyup change", function(){
+        var inputValidate = true;
+        $("#billing input").each(function(index, element){   		
+            if ($(element).val() == "")
+               inputValidate = false;
+        });
+        
+        if (inputValidate)
+            $("#credit").show("slow");
+        else
+            $("#credit").hide();
+    });
 
 
 
