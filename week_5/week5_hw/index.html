@@ -85,8 +85,9 @@
           </div>
 
           <hr class="my-4">
-          <form action="" method="POST" class="needs-validation" novalidate>
-            <fieldset>
+          <form action="" method="POST" class="needs-validation" id="checkoutForm" novalidate>
+            <!-- SHIPPING ADDRESS -->
+            <fieldset id="shipping">
               <h3>Shipping Address</h3>
               <div class="form-row">
                 <div class="form-group col-md-6">
@@ -138,149 +139,153 @@
                   </div>
                 </div>
               </div>
+
+              <button type="button" class="btn btn-info next">Next</button>
+              
             </fieldset>
 
-   <hr class="my-4">
+            <fieldset id="billing" class="d-none">
+              <hr class="my-4">
             <div class="custom-control custom-checkbox mb-4">
               <input type="checkbox" class="custom-control-input" id="check-same">
               <label class="custom-control-label" for="check-same">Shipping address is the same as my billing
                 address</label>
             </div>
 
-          <form action="" method="POST" class="needs-validation" novalidate>
-            <fieldset>
-              <h3>Billing Address</h3>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="firstName-billing">First Name</label>
-                  <input type="text" class="form-control" id="firstName-billing" required>
-                  <div class="invalid-feedback">
-                    This field is required.
+                <h3>Billing Address</h3>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="firstName-billing">First Name</label>
+                    <input type="text" class="form-control" id="firstName-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
                   </div>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="lastName-billing">Last Name</label>
-                  <input type="text" class="form-control" id="lastName-billing" required>
-                  <div class="invalid-feedback">
-                    This field is required.
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group">
-                <label for="inputAddress-billing">Address</label>
-                <input type="text" class="form-control" id="inputAddress-billing" placeholder="1234 Main St" required>
-                <div class="invalid-feedback">
-                  This field is required.
-                </div>
-              </div>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="inputCity-billing">City</label>
-                  <input type="text" class="form-control" id="inputCity-billing" required>
-                  <div class="invalid-feedback">
-                    This field is required.
-                  </div>
-                </div>
-                <div class="form-group col-md-4">
-                  <label for="inputState-billing">State</label>
-                  <select name="inputState-billing" id="inputState-billing" class="form-control" required>
-                    <option selected placeholder="Choose..."></option>
-                    <option>California</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    This field is required.
-                  </div>
-                </div>
-                <div class="form-group col-md-2">
-                  <label for="inputZip-billing">Zip</label>
-                  <input type="text" class="form-control" id="inputZip-billing" required>
-                  <div class="invalid-feedback">
-                    This field is required.
-                  </div>
-                </div>
-              </div>
-            </fieldset>
-
-            <!-- CREDIT CARD -->
-            <hr class="my-4">
-            <fieldset>
-              <h3>Credit Card</h3>
-              <div class="form-row">
-                <div class="form-group col-md-6">
-                  <label for="fullName">Name</label>
-                  <input type="text" class="form-control" id="fullName" aria-describedby="nameHelp" required>
-                  <small id="nameHelp" class="form-text text-muted">Name as it appears on your credit card.</small>
-                  <div class="invalid-feedback">
-                    This field is required.
+                  <div class="form-group col-md-6">
+                    <label for="lastName-billing">Last Name</label>
+                    <input type="text" class="form-control" id="lastName-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
                   </div>
                 </div>
 
-                <div class="form-group col-md-6">
-                <label for="cardNmber">Credit Card Number</label>
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text" id="creditIcon">@</span>
-                  </div>
-                  <input type="text" class="form-control" placeholder="0000 0000 0000 0000" required>
+                <div class="form-group">
+                  <label for="inputAddress-billing">Address</label>
+                  <input type="text" class="form-control" id="inputAddress-billing" placeholder="1234 Main St" required>
                   <div class="invalid-feedback">
                     This field is required.
                   </div>
                 </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="inputCity-billing">City</label>
+                    <input type="text" class="form-control" id="inputCity-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputState-billing">State</label>
+                    <select name="inputState-billing" id="inputState-billing" class="form-control" required>
+                      <option selected placeholder="Choose..."></option>
+                      <option>California</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputZip-billing">Zip</label>
+                    <input type="text" class="form-control" id="inputZip-billing" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
                 </div>
+
+                <button type="button" class="btn btn-info next">Next</button>
+              </fieldset>
+
+              <!-- CREDIT CARD -->
+              <hr class="my-4">
+              <fieldset id="credit" class="d-none">
+                <h3>Credit Card</h3>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label for="fullName">Name</label>
+                    <input type="text" class="form-control" id="fullName" aria-describedby="nameHelp" required>
+                    <small id="nameHelp" class="form-text text-muted">Name as it appears on your credit card.</small>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-6">
+                    <label for="cardNmber">Credit Card Number</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="creditIcon">@</span>
+                      </div>
+                      <input type="text" class="form-control" placeholder="0000 0000 0000 0000" required>
+                      <div class="invalid-feedback">
+                        This field is required.
+                      </div>
+                    </div>
+                  </div>
                 </div>
 
                 <div class="form-row">
-                <div class="form-group col-md-4">
-                  <label for="inputMonth">Month</label>
-                  <select id="inputMonth" class="form-control" required>
-                    <option selected placeholder="Choose..."></option>
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                    <option>6</option>
-                    <option>7</option>
-                    <option>8</option>
-                    <option>9</option>
-                    <option>10</option>
-                    <option>11</option>
-                    <option>12</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    This field is required.
+                  <div class="form-group col-md-4">
+                    <label for="inputMonth">Month</label>
+                    <select id="inputMonth" class="form-control" required>
+                      <option selected placeholder="Choose..."></option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="inputYear">Year</label>
+                    <select id="inputYear" class="form-control" required>
+                      <option selected placeholder="Choose..."></option>
+                      <option>2021</option>
+                      <option>2022</option>
+                      <option>2023</option>
+                      <option>2024</option>
+                      <option>2025</option>
+                    </select>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
+                  </div>
+
+                  <div class="form-group col-md-4">
+                    <label for="cvv">CVV</label>
+                    <input type="text" class="form-control" id="CVV" required>
+                    <div class="invalid-feedback">
+                      This field is required.
+                    </div>
                   </div>
                 </div>
 
-                <div class="form-group col-md-4">
-                  <label for="inputYear">Year</label>
-                  <select id="inputYear" class="form-control" required>
-                    <option selected placeholder="Choose..."></option>
-                    <option>2021</option>
-                    <option>2022</option>
-                    <option>2023</option>
-                    <option>2024</option>
-                    <option>2025</option>
-                  </select>
-                  <div class="invalid-feedback">
-                    This field is required.
-                  </div>
-                </div>
+              </fieldset>
 
-                <div class="form-group col-md-4">
-                  <label for="cvv">CVV</label>
-                  <input type="text" class="form-control" id="CVV" required>
-                  <div class="invalid-feedback">
-                    This field is required.
-                  </div>
-                </div>                
-              </div>
-              
-            </fieldset>
-
-            <button class="btn btn-primary btn-lg btn-block" type="submit">Proceed to Checkout</button>
-          </form>
+              <button class="btn btn-primary btn-lg btn-block" type="submit">Proceed to Checkout</button>
+            </form>
 
 
 
@@ -297,39 +302,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
   </script>
-
-<script>
-  $("form.needs-validation").submit(function(event){
-    event.preventDefault();
-
- $("form.needs-validation").removeClass('needs-validation').addClass('was-validated');
-    }
-  )
-
-  $(document).ready(function(){ 
-    $('#check-same').click(function(){
-        if($('#check-same').is(':checked')){
-            $('#firstName-billing').val($('#firstName').val());
-            $('#lastName-billing').val($('#lastName').val());
-            $('#inputAddress-billing').val($('#inputAddress').val());
-            $('#inputCity-billing').val($('#inputCity').val());
-            $('#inputZip-billing').val($('#inputZip').val());
-            var state = $('#inputState option:selected').val();
-      $('#inputState-billing option[value=' + state + ']').attr('selected','selected');
-        } else { 
-            //Clear on uncheck
-            $('#firstName-billing').val("");
-            $('#lastName-billing').val("");
-            $('#inputAddress-billing').val("");
-            $('#inputCity-billing').val("");
-            $('#inputZip-billing').val("");
-            $('#inputState-billing option[value=""]').attr('selected','selected');
-        };
-
-    });
-});
-
-</script>
+  <script src="script.js"></script>
 </body>
 
 </html>
