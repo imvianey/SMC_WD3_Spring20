@@ -1,0 +1,29 @@
+.section {
+    position: relative;
+}
+
+.jumbotron {
+    background-image: url(assets/parallax-prank.png);
+    background-color: #00bee9;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+
+    overflow: hidden;
+}
+
+/* .parallax {
+    background-image: url(assets/parallax-prank.png);
+    height: 100%; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} */
+
+.section .bg-move {
+    position: absolute;
+    bottom: -9px;
+    right: 25px;
+    width: 240px;
+}
