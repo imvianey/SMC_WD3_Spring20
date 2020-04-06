@@ -62,7 +62,7 @@ body {
 }
 /* END JUMBOTRON */
 
-h1{
+h1, h3{
     font-family: 'Fredoka One', arial, cursive;
     text-transform: uppercase;
     text-align: center;
@@ -74,4 +74,15 @@ p{
 
 .display-3 {
     font-size: 5rem;
+}
+
+/* FOOTER */
+h3{
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+footer a{
+    text-transform: uppercase;
+    color: #ffca3a;
 }
