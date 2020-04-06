@@ -1,29 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+    color: #160f29;
+}
+
+/* NAVBAR */
+.bg-dark {
+    background-color: #160f29 !important;
+}
+
+.navbar-brand{
+    font-family: 'Fredoka One', arial, cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    font-family: 'Roboto', arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show > .nav-link {
+    padding-bottom: 2px;
+    border-bottom: solid 2px #ffca3a;
+}
+
+.navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
+    color: #ffca3a;
+}
+/* END NAVBAR */
+/* JUMBOTRON */
 .section {
     position: relative;
 }
 
 .jumbotron {
-    background-image: url(assets/parallax-prank.png);
-    background-color: #00bee9;
+    background-image: url(assets/jumbotron-bkg.png);
+    background-color: #ffca3a;
     background-size: cover;
     background-position: center;
-    text-align: center;
-
-    overflow: hidden;
+    /* background-attachment: fixed; */
 }
-
-/* .parallax {
-    background-image: url(assets/parallax-prank.png);
-    height: 100%; 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 .section .bg-move {
     position: absolute;
-    bottom: -9px;
+    bottom: 20px;
     right: 25px;
     width: 240px;
+}
+/* END JUMBOTRON */
+
+h1{
+    font-family: 'Fredoka One', arial, cursive;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+p{
+    font-family: 'Roboto', arial, sans-serif;
+}
+
+.display-3 {
+    font-size: 5rem;
 }
