@@ -34,10 +34,9 @@ $(document).ready(function () {
             $(this)
                 .find(".bg-move")
                 .css({
-                    right: leftPosition
+                    left: leftPosition
                 });
         });
     });
-
 
 });
