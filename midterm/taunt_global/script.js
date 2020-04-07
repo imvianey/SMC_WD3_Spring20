@@ -19,13 +19,13 @@ $(document).ready(function () {
     });
 
 
-    $('#modalLauncher').click(function () {
-        $('#exampleModal').modal({
-            backdrop: false
-        });
-    });
+// MODAL TIMER 10 SECOND dELAY
+            function show_modal(){
+              $('#exampleModal').modal();
+            }
+            window.setTimeout(show_modal, 10000);
 
-    // SCROLL IMAGE TRAVELS HORIZONTALLY
+            // SCROLL IMAGE TRAVELS HORIZONTALLY
     $(window).on("load resize scroll", function () {
         $(".bg-static").each(function () {
             var windowTop = $(window).scrollTop();
