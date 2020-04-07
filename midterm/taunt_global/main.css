@@ -96,6 +96,17 @@ h2, p{
     border-color: #077187;
 }
 
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #077187;
+    border-color: #077187;
+    box-shadow: 0 0 0 .2rem rgba(59, 142, 165, .5);
+}
+
+.px-0 .btn{
+    border-radius: 0;
+}
+
 /* FOOTER */
 h3{
     color: #fff;
