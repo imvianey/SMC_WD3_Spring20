@@ -70,6 +70,7 @@ h1, h3{
     font-family: 'Fredoka One', arial, cursive;
     text-transform: uppercase;
     text-align: center;
+    word-spacing: 15px;
 }
 
 h2, p{
@@ -77,7 +78,7 @@ h2, p{
 }
 
 .display-3 {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
 }
 
 .btn-primary {
