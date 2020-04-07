@@ -34,7 +34,7 @@ $(document).ready(function () {
             $(this)
                 .find(".bg-move")
                 .css({
-                    left: leftPosition
+                    right: leftPosition
                 });
         });
     });

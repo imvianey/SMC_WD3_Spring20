@@ -55,10 +55,14 @@ body {
 
 .section .bg-move {
     position: absolute;
-    /* bottom: 20px;
-    left: 25px; */
+    bottom: -88px;
+    right: -20px;
     width: 240px;
     z-index: 2;
+}
+
+.lead {
+    font-size: 1.4rem;
 }
 /* END JUMBOTRON */
 
@@ -68,12 +72,27 @@ h1, h3{
     text-align: center;
 }
 
-p{
+h2, p{
     font-family: 'Roboto', arial, sans-serif;
 }
 
 .display-3 {
-    font-size: 5rem;
+    font-size: 4.5rem;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #3b8ea5;
+    border-color: #3b8ea5;
+    font-family: 'Fredoka One', arial, cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #077187;
+    border-color: #077187;
 }
 
 /* FOOTER */
