@@ -2,7 +2,7 @@ $(document).ready(function () {
 
 // CAROUSEL
     $('#myCarousel').carousel({
-        interval: 1000
+        interval: 7000
     });
 
     $('#carouselControl').click(function () {
@@ -23,7 +23,7 @@ $(document).ready(function () {
             function show_modal(){
               $('#exampleModal').modal();
             }
-            window.setTimeout(show_modal, 8000);
+            window.setTimeout(show_modal, 6000);
 
             // SCROLL IMAGE TRAVELS HORIZONTALLY
     $(window).on("load resize scroll", function () {
