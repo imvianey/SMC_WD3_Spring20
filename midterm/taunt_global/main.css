@@ -116,6 +116,41 @@ p {
     border-radius: 0;
 }
 
+/* CAROUSEL START */
+.carousel-caption{
+    font-family: 'Fredoka One', arial, cursive;
+    text-transform: uppercase;
+}
+
+.h5, h5 {
+    font-size: 2rem;
+}
+
+.carousel-1 .carousel-caption {
+    right: 4%;
+    bottom: -16px;
+    left: 59%;
+}
+
+.carousel-2 .carousel-caption {
+    right: 56%;
+    top: 11px;
+    left: -1%;
+}
+
+.carousel-3 .carousel-caption {
+    left: -1%;
+    bottom: -6px;
+    right: 57%;
+}
+
+.carousel-4 .carousel-caption {
+    right: 35%;
+    bottom: 20px;
+    left: 35%;
+}
+/* CAROUSEL END */
+
 /* FOOTER */
 h3 {
     color: #fff;
