@@ -159,6 +159,16 @@ text-align: center;
 }
 /* CAROUSEL END */
 
+/* MODAL START */
+.modal-content {
+    background-image: url(assets/jumbotron-bkg.png);
+}
+
+.modal-footer{
+    border-top: none;
+}
+/* MODAL END */
+
 /* FOOTER */
 h3 {
     color: #fff;
