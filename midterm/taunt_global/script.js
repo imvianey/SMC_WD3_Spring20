@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-// CAROUSEL
+    // CAROUSEL
     $('#myCarousel').carousel({
         interval: 7000
     });
@@ -19,13 +19,13 @@ $(document).ready(function () {
     });
 
 
-// MODAL TIMER 8 SECOND DELAY
-            function show_modal(){
-              $('#exampleModal').modal();
-            }
-            window.setTimeout(show_modal, 6000);
+    // MODAL TIMER 8 SECOND DELAY
+    function show_modal() {
+        $('#exampleModal').modal();
+    }
+    window.setTimeout(show_modal, 6000);
 
-            // SCROLL IMAGE TRAVELS HORIZONTALLY
+    // SCROLL IMAGE TRAVELS HORIZONTALLY
     $(window).on("load resize scroll", function () {
         $(".bg-static").each(function () {
             var windowTop = $(window).scrollTop();
@@ -37,6 +37,31 @@ $(document).ready(function () {
                     right: leftPosition
                 });
         });
+    });
+
+    // Hover over Team
+    $(".person1").hover(function () {
+        $(this).attr("src", "assets/team/person1-hover.png");
+    }, function () {
+        $(this).attr("src", "assets/team/person1.jpeg");
+    });
+
+    $(".person2").hover(function () {
+        $(this).attr("src", "assets/team/person2-hover.png");
+    }, function () {
+        $(this).attr("src", "assets/team/person2.jpeg");
+    });
+
+    $(".person3").hover(function () {
+        $(this).attr("src", "assets/team/person3-hover.png");
+    }, function () {
+        $(this).attr("src", "assets/team/person3.jpeg");
+    });
+
+    $(".person4").hover(function () {
+        $(this).attr("src", "assets/team/person4-hover.png");
+    }, function () {
+        $(this).attr("src", "assets/team/person4.jpeg");
     });
 
 });

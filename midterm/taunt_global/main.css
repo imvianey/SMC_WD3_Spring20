@@ -170,6 +170,14 @@ text-align: center;
 }
 /* END ABOUT */
 
+/* TEAM */
+.fab {
+    font-family: 'Font Awesome 5 Brands';
+    font-size: 30px;
+    margin: 0px 10px 0px 10px;
+}
+/* TEAM END */
+
 /* MODAL START */
 .modal-content {
     background-image: url(assets/jumbotron-bkg.png);
