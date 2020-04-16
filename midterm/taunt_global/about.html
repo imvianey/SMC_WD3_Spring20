@@ -18,7 +18,7 @@
   <title>Taunt Global</title>
 </head>
 
-<body>
+<body class="about">
   <header>
     <!-- START NAVBAR -->
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
@@ -45,29 +45,92 @@
   </header>
   <main>
     <!-- JUMBOTRON -->
-    <div class="section">
-      <div class="jumbotron jumbotron-fluid bg-static">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1 class="display-3">About Taunt Global</h1>
-               <div class="row">
-                <div class="col-8 my-3 ml-auto">
-                  <p class="lead">We are a team of people who like to joke around.
-                  </p>
-               </div>
-                </div>
-              </div>
-            </div>
+     <!-- CAROUSEL -->
+     <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active carousel-1">
+          <div class="overlay">
+          <img src="assets/carousel/car-feather.jpg"
+            class="d-block w-100" alt="Car filled with feathers">
+          </div>
+          <div class="carousel-caption">
+            <h5>WE MAKE FUN</h5>
+          </div>
+        </div>
+        <div class="carousel-item carousel-2">
+          <img src="assets/carousel/office-postits.jpg"
+            class="d-block w-100" alt="Office filled with post its">
+          <div class="carousel-caption">
+            <h5>WE MAKE FUN</h5>
+          </div>
+        </div>
+        <div class="carousel-item carousel-3">
+          <img src="assets/carousel/car-siran.jpg"
+            class="d-block w-100" alt="Car wrapped in siran wrap.">
+          <div class="carousel-caption">
+            <h5>WE MAKE FUN</h5>
+          </div>
+        </div>
+        <div class="carousel-item carousel-4">
+          <img src="assets/carousel/office-grass.jpg"
+            class="d-block w-100" alt="Office with grass">
+          <div class="carousel-caption">
+            <h5>WE MAKE FUN</h5>
           </div>
         </div>
       </div>
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- /CAROUSEL -->
     <!-- /END JUMBOTRON -->
     <div class="container">
       <div class="row">
         <div class="col">
+          <div class="py-5">
+          <h2 class="text-center">Who We Are</h2>
+          <p>DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. Waltz, bad nymph, for quick jigs vex! Fox nymphs grab quick-jived waltz. Brick quiz whangs jumpy veldt fox. Bright vixens jump; dozy fowl quack. Quick wafting zephyrs vex bold Jim. Quick zephyrs blow, vexing daft Jim.</p>
+        </div>
+<!-- CARDS -->
+        <div class="py-5 bg-primary">
+          <div class="card-deck">
+            <div class="card">
+              <img class="card-img-top" src="assets/icon-brain.png" alt="Brain">
+              <div class="card-body">
+                <h5 class="card-title text-center">Prank Think Tank</h5>
+                <p class="card-text">Whether it's thinking up new prank ideas or reinventing old ones.  We make pranks happen.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="assets/icon-prank.png" alt="Prank">
+              <div class="card-body">
+                <h5 class="card-title text-center">Surprise Your Friends</h5>
+                <p class="card-text"> Six big devils from Japan quickly forgot how to waltz. Big July earthquakes confound zany experimental vow. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img class="card-img-top" src="assets/icon-laugh.png" alt="Laughing bubble.">
+              <div class="card-body">
+                <h5 class="card-title text-center">Have A Good Laugh</h5>
+                <p class="card-text">Foxy parsons quiz and cajole the lovably dim wiki-girl. Have a pick: twenty six letters - no forcing a jumbled quiz!.</p>
+              </div>
+            </div>
+          </div>
+        </div>
           <!-- CAROUSEL -->
-          <div id="myCarousel" class="carousel slide">
+          <!-- <div id="myCarousel" class="carousel slide">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -120,7 +183,7 @@
               </div>
             </div>
           </div>
-          <!-- /CAROUSEL -->
+          /CAROUSEL -->
         <!-- START THE FEATURETTES -->
 
         <hr class="featurette-divider">

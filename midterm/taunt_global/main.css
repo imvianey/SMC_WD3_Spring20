@@ -4,12 +4,19 @@
 body {
     color: #160f29;
 }
-
-/* NAVBAR */
+/* COLORS */
 .bg-dark {
     background-color: #160f29 !important;
 }
 
+.bg-primary {
+    background-color: #ffca3a !important;
+    margin: 0 -9999rem;
+    padding: 0.25rem 9999rem;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+/* NAVBAR */
 .navbar-brand {
     font-family: 'Fredoka One', arial, cursive;
     text-transform: uppercase;
@@ -55,7 +62,7 @@ body {
     background-color: #ffca3a;
     background-size: cover;
     background-position: center;
-    /* background-attachment: fixed; */
+    margin-bottom: 0px;
 }
 
 .section .bg-move {
@@ -132,32 +139,39 @@ text-align: center;
 .carousel-caption{
     font-family: 'Fredoka One', arial, cursive;
     text-transform: uppercase;
+    bottom: 41%;
+    padding: 0px;
 }
 
-.carousel-1 .carousel-caption {
-    right: 4%;
-    bottom: -16px;
-    left: 59%;
+.carousel-caption h5 {
+    font-size: 9vw;
 }
 
-.carousel-2 .carousel-caption {
-    right: 56%;
-    top: 11px;
-    left: -1%;
+.carousel-inner{
+    width: 100vw;
+    background: black;
+    overflow: hidden;
 }
 
-.carousel-3 .carousel-caption {
-    left: -1%;
-    bottom: -6px;
-    right: 57%;
-}
-
-.carousel-4 .carousel-caption {
-    right: 35%;
-    bottom: 20px;
-    left: 35%;
+.carousel-inner img{
+    object-fit: cover;
+   opacity: 0.6;
 }
 /* CAROUSEL END */
+
+/* ABOUT */
+.about .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-color: #ffca3a;
+    background-clip: border-box;
+    border: none;
+    border-radius: .25rem;
+}
+/* END ABOUT */
 
 /* MODAL START */
 .modal-content {
