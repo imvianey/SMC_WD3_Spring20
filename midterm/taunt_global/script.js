@@ -1,5 +1,14 @@
 $(document).ready(function () {
 
+    // INDEX SCROLL BUTTON D-NONE
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 305) {
+           $('#eaten').addClass('invisible');
+        } else {
+           $('#eaten').removeClass('invisible');
+        }
+    });
+
     // CAROUSEL
     $('#myCarousel').carousel({
         interval: 7000

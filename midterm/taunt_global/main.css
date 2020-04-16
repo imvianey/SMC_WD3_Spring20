@@ -90,7 +90,7 @@ p {
 }
 
 .h5, h5 {
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 font-family: 'Fredoka One', arial, cursive;
 text-transform: uppercase;
 text-align: center;
@@ -175,6 +175,7 @@ text-align: center;
     font-family: 'Font Awesome 5 Brands';
     font-size: 30px;
     margin: 0px 10px 0px 10px;
+    color: #077187;
 }
 /* TEAM END */
 
