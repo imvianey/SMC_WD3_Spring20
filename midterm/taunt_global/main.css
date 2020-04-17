@@ -77,16 +77,24 @@ body {
 /* END JUMBOTRON */
 
 h1,
-h3 {
+h2 {
     font-family: 'Fredoka One', arial, cursive;
     text-transform: uppercase;
     text-align: center;
-    word-spacing: 15px;
+    word-spacing: 7px;
 }
 
-h2,
+h2{
+    font-size: 3.1rem;
+}
+
+h3,
 p {
     font-family: 'Roboto', arial, sans-serif;
+}
+
+.h3, h3 {
+    font-size: 2.5rem;
 }
 
 .h5, h5 {
@@ -118,6 +126,15 @@ text-align: center;
     color: #fff;
     background-color: #077187;
     border-color: #077187;
+}
+
+.btn-secondary {
+    color: #160f29;
+    background-color: #ffca3a;
+    border-color: #160f29;
+    font-family: 'Roboto', arial, sans-serif;
+    font-weight: 800;
+    border: 3px solid;
 }
 
 .btn-primary.focus,
@@ -190,9 +207,13 @@ text-align: center;
 /* MODAL END */
 
 /* FOOTER */
-h3 {
+footer h3 {
     color: #fff;
     letter-spacing: 1px;
+    font-family: 'Fredoka One', arial, cursive;
+    text-transform: uppercase;
+    text-align: center;
+    word-spacing: 15px;
 }
 
 footer a {
@@ -209,6 +230,11 @@ footer a {
     .display-3 {
         font-size: 9vw;
     }
+
+    h2{
+        font-size: 4rem;
+    }
+    
 }
 
 @media(min-width:1140px) {
