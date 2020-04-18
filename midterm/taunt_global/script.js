@@ -27,6 +27,10 @@ $(document).ready(function () {
         $('#carouselControl').toggleClass('paused');
     });
 
+    // ALERT DELAY
+    setTimeout(function() { 
+        $('#boo').removeClass('d-none'); }, 5000);
+
 
    // MODAL TIMER 6 SECOND DELAY
     function show_modal() {
