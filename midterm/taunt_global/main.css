@@ -94,10 +94,10 @@ h2{
 }
 
 .h5, h5 {
-    font-size: 2.3rem;
 font-family: 'Fredoka One', arial, cursive;
 text-transform: uppercase;
 text-align: center;
+    font-size: 1.8rem;
 }
 
 p {
@@ -157,6 +157,12 @@ p {
     box-shadow: 0 0 0 .2rem rgba(59, 142, 165, .5);
 }
 
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #077187;
+    border-color: #077187;
+}
+
 .btn {
     border-radius: 0;
 }
@@ -206,6 +212,7 @@ p {
     margin: 0px 10px 0px 10px;
     color: #077187;
 }
+
 /* TEAM END */
 
 /* ALERT START */
@@ -240,6 +247,10 @@ p {
     position: absolute;
 top: 20px;
 right: 20px;
+}
+
+.modal-header .h5{
+    font-size: 2.2rem;
 }
 
 label {
