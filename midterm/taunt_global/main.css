@@ -4,6 +4,7 @@
 body {
     color: #160f29;
 }
+
 /* COLORS */
 .bg-dark {
     background-color: #160f29 !important;
@@ -84,19 +85,21 @@ h2 {
     word-spacing: 7px;
 }
 
-h2{
+h2 {
     font-size: 2.4rem;
 }
 
-.h3, h3 {
+.h3,
+h3 {
     font-family: 'Roboto', arial, sans-serif;
     font-size: 2rem;
 }
 
-.h5, h5 {
-font-family: 'Fredoka One', arial, cursive;
-text-transform: uppercase;
-text-align: center;
+.h5,
+h5 {
+    font-family: 'Fredoka One', arial, cursive;
+    text-transform: uppercase;
+    text-align: center;
     font-size: 1.8rem;
 }
 
@@ -140,8 +143,8 @@ p {
 }
 
 .btn-secondary:hover {
-   transform: scale(1.1);
-   color: #160f29;
+    transform: scale(1.1);
+    color: #160f29;
     background-color: #ffca3a;
     border-color: #160f29;
     font-family: 'Roboto', arial, sans-serif;
@@ -157,7 +160,9 @@ p {
     box-shadow: 0 0 0 .2rem rgba(59, 142, 165, .5);
 }
 
-.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show>.btn-primary.dropdown-toggle {
     color: #fff;
     background-color: #077187;
     border-color: #077187;
@@ -168,7 +173,7 @@ p {
 }
 
 /* CAROUSEL START */
-.carousel-caption{
+.carousel-caption {
     font-family: 'Fredoka One', arial, cursive;
     text-transform: uppercase;
     bottom: 41%;
@@ -179,16 +184,17 @@ p {
     font-size: 9vw;
 }
 
-.carousel-inner{
+.carousel-inner {
     width: 100vw;
     background: black;
     overflow: hidden;
 }
 
-.carousel-inner img{
+.carousel-inner img {
     object-fit: cover;
-   opacity: 0.6;
+    opacity: 0.6;
 }
+
 /* CAROUSEL END */
 
 /* ABOUT */
@@ -203,6 +209,7 @@ p {
     border: none;
     border-radius: .25rem;
 }
+
 /* END ABOUT */
 
 /* TEAM */
@@ -225,12 +232,13 @@ p {
     padding: .75rem 1.25rem;
     margin-bottom: 0rem;
     border: 1px solid transparent;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        border-bottom-color: transparent;
-        border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
     border-radius: .25rem;
 }
+
 /* ALERT END */
 
 /* MODAL START */
@@ -243,13 +251,13 @@ p {
     line-height: 1.3;
 }
 
-.modal-header .close{
+.modal-header .close {
     position: absolute;
-top: 20px;
-right: 20px;
+    top: 20px;
+    right: 20px;
 }
 
-.modal-header .h5{
+.modal-header .h5 {
     font-size: 2.2rem;
 }
 
@@ -264,13 +272,13 @@ label {
 }
 
 .modal-header {
-    
+
     padding: 0rem;
     border-bottom: 0px solid #dee2e6;
     display: block;
 }
 
-.modal-footer{
+.modal-footer {
     border-top: none;
 }
 
@@ -284,11 +292,12 @@ label {
     border-color: #bc2328;
 }
 
-.custom-control-input:checked ~ .custom-control-label::before {
+.custom-control-input:checked~.custom-control-label::before {
     color: #fff;
     border-color: #bc2328;
     background-color: #bc2328;
 }
+
 /* MODAL END */
 
 /* FOOTER */
@@ -316,18 +325,19 @@ footer a {
         font-size: 9vw;
     }
 
-    h2{
+    h2 {
         font-size: 4rem;
     }
-    
-    .h3, h3 {
+
+    .h3,
+    h3 {
         font-size: 2.5rem;
     }
 }
 
 @media(min-width:1140px) {
     .section .bg-move {
-bottom: -115px;
-right: -6px;
+        bottom: -115px;
+        right: -6px;
     }
 }
