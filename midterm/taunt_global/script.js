@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
     // INDEX SCROLL BUTTON D-NONE
-    $(window).scroll(function(){
+    $(window).scroll(function () {
         if ($(this).scrollTop() > 400) {
-           $('#eaten').addClass('invisible');
+            $('#eaten').addClass('invisible');
         } else {
-           $('#eaten').removeClass('invisible');
+            $('#eaten').removeClass('invisible');
         }
     });
 
@@ -28,7 +28,7 @@ $(document).ready(function () {
     });
 
 
-    // MODAL TIMER 8 SECOND DELAY
+   // MODAL TIMER 6 SECOND DELAY
     function show_modal() {
         $('#exampleModal').modal();
     }
