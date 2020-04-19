@@ -2,10 +2,10 @@ $(document).ready(function () {
 
     // INDEX SCROLL BUTTON D-NONE ON SCREENS LARGER THAN 765
     $(document).ready(myfunction);
-    $(window).on('resize',myfunction);
-    
+    $(window).on('resize', myfunction);
+
     function myfunction() {
-        if ( $(window).width() > 765) {     
+        if ($(window).width() > 765) {
             $(window).scroll(function () {
                 if ($(this).scrollTop() > 400) {
                     $('.eaten').addClass('invisible');
@@ -13,16 +13,8 @@ $(document).ready(function () {
                     $('.eaten').removeClass('invisible');
                 }
             });
-        }        
+        }
     }
-
-    $(function () {
-              $('.navbar-toggler').clickFireworks({
-                id: 'fireworks',
-                appendTo: 'body',
-                zIndex: 1000
-              });
-            });
 
     // CAROUSEL
     $('#myCarousel').carousel({
