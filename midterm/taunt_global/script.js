@@ -1,17 +1,32 @@
 $(document).ready(function () {
 
-    // INDEX SCROLL BUTTON D-NONE
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 400) {
-            $('#eaten').addClass('invisible');
-        } else {
-            $('#eaten').removeClass('invisible');
-        }
-    });
+    // INDEX SCROLL BUTTON D-NONE ON SCREENS LARGER THAN 765
+    $(document).ready(myfunction);
+    $(window).on('resize',myfunction);
+    
+    function myfunction() {
+        if ( $(window).width() > 765) {     
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 400) {
+                    $('.eaten').addClass('invisible');
+                } else {
+                    $('.eaten').removeClass('invisible');
+                }
+            });
+        }        
+    }
+
+    $(function () {
+              $('.navbar-toggler').clickFireworks({
+                id: 'fireworks',
+                appendTo: 'body',
+                zIndex: 1000
+              });
+            });
 
     // CAROUSEL
     $('#myCarousel').carousel({
-        interval: 7000
+        interval: 6000
     });
 
     $('#carouselControl').click(function () {

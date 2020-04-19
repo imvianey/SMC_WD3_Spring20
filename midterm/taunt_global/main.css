@@ -258,15 +258,6 @@ p {
     color: #077187;
 }
 
-.social-media {
-    position: absolute;
-    bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    left: 0;
-    right: 0;
-}
-
 /* TEAM END */
 
 /* ALERT START */
@@ -384,6 +375,15 @@ footer a {
     h3 {
         font-size: 2.5rem;
     }
+
+.social-media {
+    position: absolute;
+    bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
 }
 
 @media(min-width:1140px) {
