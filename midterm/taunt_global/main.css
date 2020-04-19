@@ -63,6 +63,10 @@ body {
     margin-bottom: 0px;
 }
 
+.shop .jumbotron{
+    background-image: url(assets/jumbotron-bkg-in.png);
+}
+
 .section .bg-move {
     position: absolute;
     bottom: -88px;
@@ -72,10 +76,14 @@ body {
 }
 
 .lead {
-    font-size: 1.4rem;
+    font-size: 2.4rem;
 }
 
 /* END JUMBOTRON */
+a:hover {
+    color: #ffca3a;
+    text-decoration: underline;
+}
 
 h1,
 h2 {
@@ -92,6 +100,12 @@ h2 {
 .h3,
 h3 {
     font-family: 'Roboto', arial, sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    padding: 1.25rem;
+}
+
+.h4, h4 {
     font-size: 2rem;
 }
 
@@ -106,6 +120,7 @@ h5 {
 p {
     font-family: 'Roboto', arial, sans-serif;
     font-size: 1.5rem;
+    padding: 1.25rem;
 }
 
 .col-12 {
@@ -210,6 +225,28 @@ p {
     border-radius: .25rem;
 }
 
+.card-header{
+    font-family: 'Fredoka One', arial, cursive;
+text-transform: uppercase;
+text-align: center;
+    padding: .75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #fff;
+    border-bottom: 0px solid rgba(0,0,0,.125);
+    height: 130px;
+}
+
+.card-body {
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 0rem;
+}
+
+.card-body p {
+    padding-top: 1rem;
+}
+
 /* END ABOUT */
 
 /* TEAM */
@@ -308,6 +345,10 @@ footer h3 {
     text-transform: uppercase;
     text-align: center;
     word-spacing: 15px;
+}
+
+footer p {
+    padding: 0px;
 }
 
 footer a {
