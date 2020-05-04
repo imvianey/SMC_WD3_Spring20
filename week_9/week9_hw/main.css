@@ -13,6 +13,63 @@ body{
 
 .effect:hover {
     transform: rotate(5deg);
-    transition-property: ease-in-out;
-    transition-duration: 3s;
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
     }
+
+/* .effect:active{
+    transform: rotate3d(-2, -2, 0, 60deg);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+} */
+
+/* .effect:active{
+    transform: scale(1);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+
+    z-index: 2;
+position: absolute;
+margin: auto;
+left: 0;
+top: 0;
+bottom: 0;
+right: 0;
+} */
+
+.translate-r:active{
+    transform: translate(50%, 100px);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+
+.translate-l:active{
+    transform: translate(-50%, 100px);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+.translate-b-r:active{
+    transform: translate(50%, -100px);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
+
+
+.translate-b-l:active{
+    transform: translate(-50%, -100px);
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    z-index: 2;
+}
