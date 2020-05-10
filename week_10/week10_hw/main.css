@@ -269,6 +269,7 @@ body {
 }
 
 .heart:before {
+  background-color: #F26B6C;
   top: -15px;
   left: 0;
 }
