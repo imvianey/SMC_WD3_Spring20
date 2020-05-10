@@ -1,11 +1,12 @@
-/*
- * Base structure
- */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600&display=swap');
 
+
+/* BASE STRUCTURE START */
 html,
 body {
   height: 100%;
   background-color: #333;
+  background-image: linear-gradient(to bottom right, #E5F2E3, #75DDDD 60%);
 }
 
 body {
@@ -14,16 +15,42 @@ body {
   color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 .cover-container {
   max-width: 42em;
 }
 
+.btn-primary {
+    color: #fff;
+    background-color: #E2C042;
+    border-color: #E2C042;
+}
 
-/*
- * Header
- */
+.btn-primary:hover {
+    color: #E2C042;
+    background-color: #fff;
+    border-color: #E2C042;
+    border-width: 4px;
+font-weight: 800;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #E2C042;
+    border-color: #E2C042;
+}
+
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #E2C042;
+    border-color: #E2C042;
+    box-shadow: 0 0 0 .2rem     rgba(226, 192, 66, 0.58);
+}
+/* BASE STRUCTURE END*/
+
+/* HEADER START*/
 .masthead {
   margin-bottom: 2rem;
 }
@@ -54,6 +81,10 @@ body {
   border-bottom-color: #fff;
 }
 
+.mb-4, .my-4 {
+    margin-bottom: 8.5rem !important;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;
@@ -62,11 +93,9 @@ body {
     float: right;
   }
 }
+/* HEADER END */
 
-
-/*
- * Cover
- */
+/* COVER START */
 .cover {
   padding: 0 1.5rem;
 }
@@ -74,19 +103,21 @@ body {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
+/* COVER END */
 
-/* Animation Swivle Background */
+/* ANIMATION: SKY*/
 .swivle {
     width: 100%;
     height: 100%;
-    position: absolute;
     background-image: url('assets/sky.jpg');
     background-position: left;
     animation-fill-mode: forwards;
     animation-duration: 8s;
     animation-name: left-right;
-    background-size: contain;
+    background-size: cover;
     animation-iteration-count: infinite;
+    z-index: 5;
+    position: absolute;
 }
   
   @keyframes left-right {
@@ -94,13 +125,14 @@ body {
   }
 
 
-  /* Animation fade sky to transparent */
+  /*ANIMATION: SKY TRANSPARENT */
 .sky-fade {
     background-color: lightblue;
     animation-duration: 3s;
     animation-delay: 7s;
     animation-fill-mode: forwards;
     animation-name: fade;
+    z-index: 5;
 }
   
   @keyframes fade {
@@ -108,7 +140,7 @@ body {
     to {opacity :0;}
   }
 
-  /* Animate plane left */
+  /* ANIMATION: PLANE LEFT */
   .plane {
     position: absolute;
     left: 0;
@@ -119,13 +151,19 @@ body {
     z-index: 3;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
+    z-index: 7;
+    background-size: cover;
+  }
+
+  .plane:hover{
+    transform: rotate(-5deg);
   }
   
   @keyframes flyleft {
-    0% {left :-20%; top: 25%}
-    35% {left :10%; top: 44%}
-    55% {left :25%; top: 35%}
-    100% {left :70%; top: 65%}
+    0% {left :-50%; top: 25%}
+    35% {left :5%; top: 44%}
+    55% {left :10%; top: 35%}
+    100% {left: 27%; top: 72%;}
   }
 
   .plane-shadow {
@@ -138,4 +176,79 @@ body {
   
   @keyframes shadow {
     100% {box-shadow: 0px 18px 18px -14px rgba(115, 125, 130, 0.82);}
+  }
+
+/* MODAL START */
+.modal-content {
+    background-image: url(assets/paper.jpg);
+    background-position: center;
+    background-size: cover;
+    border: 0px solid rgba(0,0,0,.2);
+border-radius: .1rem;
+}
+
+.modal-title {
+    margin-bottom: 0;
+    line-height: 1.3;
+}
+
+.modal-header .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal-footer{
+    border-top: none;
+}
+
+.modal-body p{
+    color: #3A3E41;
+    text-shadow: none;
+}
+
+.lead {
+    font-size: 2rem;
+}
+
+.heart {
+    background-color: #F26B6C;
+    height: 30px;
+    transform: rotate(-45deg);
+    width: 30px;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-bottom: 20px;
+  }
+
+  .heart:before,
+.heart:after {
+  content: "";
+  background-color: #F26B6C;
+  border-radius: 50%;
+  height: 30px;
+  position: absolute;
+  width: 30px;
+}
+
+.heart:before {
+    top: -15px;
+    left: 0;
+  }
+
+  @media(min-width:960px) {
+    .swivle {
+        background-size: cover;
+    }
+
+    @keyframes flyleft {
+        0% {left :-20%; top: 25%}
+        35% {left :10%; top: 44%}
+        55% {left :25%; top: 35%}
+        100% {left :70%; top: 65%}
+      }
   }
