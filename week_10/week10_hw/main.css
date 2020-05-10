@@ -115,14 +115,17 @@ body {
     top: 25%;
     width: 100px;
     animation-name: flyleft;
-    animation-duration: 15s;
+    animation-duration: 12s;
     z-index: 3;
     animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
   }
   
   @keyframes flyleft {
-    from {left :0; top: 25%}
-    to {left :70%; top: 65%}
+    0% {left :-20%; top: 25%}
+    35% {left :10%; top: 44%}
+    55% {left :25%; top: 35%}
+    100% {left :70%; top: 65%}
   }
 
   .plane-shadow {
