@@ -41,6 +41,6 @@
    var distY = Math.abs(ballPosY - event.offsetY);
 
    if(distX < ballRadius && distY < ballRadius){
-     console.log("FIRE!!!");
+     ballSpeedX = (Math.floor(Math.random() * 10));
    }
  })
