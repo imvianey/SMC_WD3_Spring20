@@ -44,3 +44,14 @@
      ballSpeedX = (Math.floor(Math.random() * 10));
    }
  })
+
+ var button = document.getElementById("scoreCount"),
+  count = 0;
+  canvas.onclick = function() {
+  var distX = Math.abs(ballPosX - event.offsetX);
+  var distY = Math.abs(ballPosY - event.offsetY);
+  if(distX < ballRadius && distY < ballRadius){
+    count += 1;
+    button.innerHTML = "Score: " + count;
+  }
+};
