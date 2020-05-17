@@ -36,6 +36,7 @@
 
  animate();
 
+//  CHANGE BALL SPEED ON CLICK
  canvas.addEventListener("click", function(event){
    var distX = Math.abs(ballPosX - event.offsetX);
    var distY = Math.abs(ballPosY - event.offsetY);
@@ -45,6 +46,7 @@
    }
  })
 
+//  SCORE COUNT
  var button = document.getElementById("scoreCount"),
   count = 0;
   canvas.onclick = function() {
@@ -55,3 +57,14 @@
     button.innerHTML = "Score: " + count;
   }
 };
+
+// RANDOM COLOR CHANGE
+const randomColor = () => {
+  const randomColor = Math.floor(Math.random()*16777215).toString(16);
+  ballColor = "#" + randomColor;
+  color.innerHTML = "#" + randomColor;
+}
+
+colorButton.addEventListener("click", randomColor);
+randomColor();
+
