@@ -33,16 +33,16 @@
             context.fill();
 
             if((ballPosX + ballRadius >= canvas.width) || (ballPosX - ballRadius) <= 0){
-                ballSpeedX = ballSpeedX * -1;
-            }
+        ballSpeedX = ballSpeedX * -1;
+      }
 
-            if((ballPosY + ballRadius >= canvas.height) || (ballPosY - ballRadius) <= 0){
-                ballSpeedY = ballSpeedY * -1;
-            }
+      if( ( ballPosY + ballRadius >= canvas.height) || ( ballPosY - ballRadius <= 0) ){
+        ballSpeedY = ballSpeedY * -1;
+      }
 
             // HOW MOVEMENT RUNS -----
             ballPosX = ballPosX + ballSpeedX;
-            ballPosY = ballPosY + ballSpeedY;
+      ballPosY = ballPosY + ballSpeedY;
 
             window.requestAnimationFrame(animate);
         }
@@ -50,12 +50,13 @@
         animate();
 
         canvas.addEventListener("click", function(event){
-            var distX = Math.abs(ballPosX = event.offsetX);
-            var distY = Math.abs(ballPosY = event.offsetY);
+      var distX = Math.abs(ballPosX - event.offsetX);
+      var distY = Math.abs(ballPosY - event.offsetY);
 
-            if(distX < ballRadius && distY < ballRadius)
-            console.log("FIRE!!!");
-        })
+      if(distX < ballRadius && distY < ballRadius){
+        console.log("FIRE!!!");
+      }
+    })
 
         // RECTANTLE -----
         // context.fillStyle = "#1fc2e1";
