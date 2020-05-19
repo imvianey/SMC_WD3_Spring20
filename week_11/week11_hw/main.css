@@ -2,18 +2,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 body {
-    background-color: #222222;
-    background: repeating-linear-gradient(45deg, #281e1e 0%, #170d0d 10%, #1c1818 0%, #1b1010 50%) 0 / 15px 15px;
+  background-color: #222222;
+  background: repeating-linear-gradient(45deg, #281e1e 0%, #170d0d 10%, #1c1818 0%, #1b1010 50%) 0 / 15px 15px;
 }
 
 canvas {
-    border: 6px inset #ff0707ba;
-    margin: 10px;
+  border: 6px inset #ff0707ba;
+  margin: 10px;
 }
 
 .neon {
-    color: #fff;
-    text-shadow:
+  color: #fff;
+  text-shadow:
     0 0 0px #fff,
     0 0 0px #fff,
     0 0 10px #fff,
@@ -22,55 +22,60 @@ canvas {
     0 0 10px #e10101,
     0 0 10px #f00,
     0 0 150px #f00;
-      font-family: 'Monoton', cursive;
-      font-size: 15vw;
-  }
-
-  #scoreCount{
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
-    font-size: 60px;
-  }
-
-  /* BUTTON */
-  button {
-    display: inline-block;
-    padding: 20px 40px;
-    font-size: 3vw;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #ff0707;
-    border: none;
-    box-shadow: 0 10px 10px #fff;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  button:active {
-    background-color: #fff;
-    color: #ff0707;
-    box-shadow: 0 5px 10px #ff0707;
-    /* transform: translateY(4px); */
-    font-family: 'Roboto', sans-serif;
-  }
-
-
-  @media (min-width: 600px) {
-.neon{
-    font-size: 9vw;
+  font-family: 'Monoton', cursive;
+  font-size: 15vw;
 }
+
+#scoreCount {
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 60px;
+}
+
+/* BUTTON */
+button {
+  display: inline-block;
+  padding: 20px 40px;
+  font-size: 35px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #ff0707;
+  border: none;
+  box-shadow: 0 10px 10px #fff;
+  font-family: 'Roboto', sans-serif;
+}
+
+button:active {
+  background-color: #fff;
+  color: #ff0707;
+  box-shadow: 0 5px 10px #ff0707;
+  /* transform: translateY(4px); */
+  font-family: 'Roboto', sans-serif;
+}
+
+#colorButton {
+  font-family: 'Monoton', cursive;
+  word-spacing: 15px;
+}
+
+
+@media (min-width: 600px) {
+  .neon {
+    font-size: 9vw;
   }
+}
 
-  @media (min-width: 768px) {
-    .neon{
-        font-size: 7vw;
-    }
-  } 
+@media (min-width: 768px) {
+  .neon {
+    font-size: 7vw;
+  }
+}
 
-  @media (min-width: 992px) {
-    .neon{
-        font-size: 85px;
-    }
-} 
+@media (min-width: 992px) {
+  .neon {
+    font-size: 85px;
+  }
+}
