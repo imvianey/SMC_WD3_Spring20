@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three JS Cube and Sphere</title>
+</head>
+<body>
+    <script src="https://threejs.org/build/three.js"></script>
+
+    <script>
+        // CANVAS
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // CAMERA
+        const camera = new THREE.PerspectiveCamera(70, 2, 0.2, 5);
+            // PerspectiveCamera( fov, aspect ratio, near, far)
+        camera.position.z = 2
+
+        // SCENE
+        const scene = new THREE.Scene();
+
+        // LIGHT SOURCE
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+            // Light( color : Integer, intensity : float )
+        light.position.set(-1, 2, 4)
+            // x, y, z positions
+        scene.add(light);
+
+        // CUBE
+        const cube = new THREE.BoxGeometry(1, 1, 1);
+        const material = new THREE.MeshPhongMaterial({color: 0xF9FA3F});
+        const body = new THREE.Mesh(cube, material);
+
+        // SPEHERE
+        const sphere = new THREE.SphereGeometry(1, 50, 50);
+        const body2 = new THREE.Mesh(sphere, material);
+        body2.position.x = 2;
+
+            // add body to scene
+        scene.add(body);
+        scene.add(body2);
+
+            // animation function
+        function render(time){
+            time *= 0.001;
+            // convert time to seconds
+
+            body.rotation.x = time;
+            body.rotation.y = time;
+
+            renderer.render(scene,camera);
+            // gives it a start runs the first fram
+            requestAnimationFrame(render);
+        }
+            // makes it loop and constantly request itself
+        requestAnimationFrame(render);
+    </script>
+    
+</body>
+</html>
