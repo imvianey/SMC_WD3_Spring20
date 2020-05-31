@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+</head>
+<body>
+    <a-scene>
+        <a-box position="-1 0.5 -3" rotation="45 -20 0" color="#fe12ec"></a-box>
+        <!-- Position = "x y z" -->
+        <a-sphere color="steelblue" radius="1.5" position="1 0 -2"></a-sphere>
+        
+        <a-assets>
+            <a-asset-item id="cityModel" src="https://cdn.aframe.io/test-models/glTF-2.0/virtualcity/VC.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity gltf-model="#cityModel" modify-materials></a-entity>
+
+        <a-sky color="#aaaaff"></a-sky>
+    </a-scene>
+</body>
+</html>
