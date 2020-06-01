@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script> 
+</head>
+
+<body>
+    <a-scene>
+        <!-- CAMERA -->
+        <a-camera position="0 1 4" cursor-visible="true" cursor-scale="2" cursor-color="#0095DD" cursor-opacity="0.5"></a-camera>
+
+        <!-- ENVIRONMENT -->
+            <a-entity environment="preset: dream; lighting: none"></a-entity>
+
+  <!-- SHADOW -->
+  <a-entity light="type:directional; castShadow:true;" position="0 2 2"></a-entity>
+
+
+        <!-- HEAD STATUE -->
+        <a-entity rotation="0 0 0" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+        <a-obj-model  src="https://cdn.glitch.com/0beab8f3-9b67-4894-911f-7045d6f62430%2FDAVE_TOUNGE.obj?v=1589344293466" 
+        scale ="0.03 0.03 0.03"
+        position="0 0 -4"
+        color="#CCCC00"
+        shadow="cast: true; receive: false"
+        light="type:directional; castShadow:true;">
+</a-obj-model>
+</a-entity>
+
+<a-obj-model  src="https://cdn.glitch.com/0beab8f3-9b67-4894-911f-7045d6f62430%2FDAVE_TOUNGE.obj?v=1589344293466" 
+        scale ="0.03 0.03 0.03"
+        position="0 0 -4"
+        color="#CCCC00"
+        shadow="cast: true; receive: false"
+        light="type:directional; castShadow:true;">
+        <a-animation attribute ="rotation"
+        dur="1000"
+        fill="forwards"
+        to="0 360 0"
+        repeat="indefinite"></a-animation>
+</a-obj-model>
+
+<!-- CONE -->
+<a-entity rotation="0 0 50" animation="property: rotation; to: 20 360 50; loop: true; dur: 10000">
+<a-cone color="tomato" radius-bottom="1" radius-top="0" position="4 0 2" color="mediumseagreen" src="#texture"></a-cone>
+</a-entity>
+
+<!-- TORUS KNOT -->
+<a-entity>
+<a-torus-knot color="#40e0d0" arc="180" p="15" q="4" radius="7" radius-tubular="0.1"></a-torus-knot>
+</a-entity>
+
+      </a-scene>
+</body>
+
+</html>
