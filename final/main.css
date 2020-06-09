@@ -2,26 +2,40 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 body {
-    overflow-x: hidden;
     font-family: 'Josefin Sans', sans-serif;
-  }
+}
 
+.h2,
+h2 {
+    font-size: 4rem;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* START NAVBAR */
 .dropdown-toggle::after {
     display: none;
 }
+
+.navbar-brand img {
+    height: 35px;
+}
+
+.bg-light {
+    background-color: #fff !important;
+}
+
+.dropdown-menu{
+    border: 0px;
+}
+/* END NAVBAR */
 
 .carousel-indicators li {
     border-radius: 50%;
     width: 10px;
     height: 10px;
-}
-
-.h2, h2 {
-    font-size: 4rem;
-}
-
-p{
-    font-family: 'Open Sans', sans-serif;
 }
 
 .position-absolute {
