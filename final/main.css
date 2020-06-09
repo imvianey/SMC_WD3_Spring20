@@ -32,6 +32,17 @@ p {
 }
 /* END NAVBAR */
 
+/* START JUMBOTRON */
+.uni .jumbotron {
+    background-image: url(assets/uni-trick.jpg);
+    height: 330px;
+    background-position: bottom bottom;
+background-size: cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+/* END JUMBOTRON */
+
 .carousel-indicators li {
     border-radius: 50%;
     width: 10px;
