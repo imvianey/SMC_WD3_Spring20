@@ -54,3 +54,25 @@ background-repeat: no-repeat;
     top: 30px;
     left: 30px;
 }
+
+/* CARD START */
+.card {
+    
+    border: none;
+    margin: 15px;
+}
+
+.btn-primary {
+    background-color: transparent;
+    border-radius: 0px;
+    border: 2px solid black;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #d92929;
+    background-color: #2364aa;
+    border-radius: 0px;
+    border: 2px solid #d92929;
+    color: white;
+}
