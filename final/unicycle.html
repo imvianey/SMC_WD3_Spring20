@@ -21,67 +21,67 @@
 
 <body>
   <header>
-    <!-- START NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+     <!-- START NAVBAR -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
-        aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <a class="navbar-brand d-lg-none" href="#"><img src="assets/logo.png" alt="cycools logo"></a>
-      <i class="fas fa-shopping-bag d-lg-none"></i>
-
-      <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown show">
-            <a class="nav-link dropdown-toggle d-flex" href="#" id="dropdown01" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="true">Cycles
-              <i class="fas fa-plus-circle ml-auto p-2 d-lg-none"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="dropdown01">
-              <a class="dropdown-item" href="#">Unicycle</a>
-              <a class="dropdown-item" href="#">Bicycle</a>
-              <a class="dropdown-item" href="#">Tricycle</a>
-            </div>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="#">Accessories</a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#">Learn</a>
-          </li>
-          <li class="nav-item d-lg-none">
-            <a class="nav-link" href="#">Location</a>
-          </li>
-        </ul>
-
-        <!-- LARGE SCREEN: CHECKOUT BAG -->
-        <a class="navbar-brand d-none d-lg-block" href="#"><img src="assets/logo-red.png" alt="cycools logo"></a>
-
-        <ul class="navbar-nav d-none d-lg-flex">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Learn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Location</a>
-          </li>
-          <li class="nav-item align-self-center">
-            <i class="fas fa-shopping-bag"></i>
-            
-          </li>
-        </ul>
-      </div>
-    </nav>
-    <!-- /END NAVBAR -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
+          aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <a class="navbar-brand d-lg-none" href="index.html"><img src="assets/logo.png" alt="cycool logo"></a>
+        <a href="cart.html"><i class="fas fa-shopping-cart d-lg-none position-relative"><span class="cart-badge">0</span></i></a>
+  
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown show">
+              <a class="nav-link dropdown-toggle d-flex" href="#" id="dropdown01" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="true">Cycles
+                <i class="fas fa-plus-circle ml-auto p-2 d-lg-none"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdown01">
+                <a class="dropdown-item" href="unicycle.html">Unicycle</a>
+                <a class="dropdown-item" href="bicycle.html">Bicycle</a>
+                <a class="dropdown-item" href="tricycle.html">Tricycle</a>
+              </div>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link" href="accessories.html">Accessories</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item d-lg-none">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+          </ul>
+  
+          <!-- LARGE SCREEN: CHECKOUT BAG -->
+          <a class="navbar-brand d-none d-lg-block" href="index.html"><img src="assets/logo.png" alt="cycool logo"></a>
+  
+          <ul class="navbar-nav d-none d-lg-flex">
+            <li class="nav-item">
+              <a class="nav-link" href="learn.html">Learn</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="location.html">Location</a>
+            </li>
+            <li class="nav-item align-self-center position-relative">
+              <a href="cart.html"><i class="fas fa-shopping-cart"></i><span class="cart-badge">0</span></i></a>
+  
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- /END NAVBAR -->
   </header>
   <main class="uni">
     <!-- JUMBOTRON -->
-    <div class="jumbotron jumbotron-fluid bg-static">
+    <div class="jumbotron jumbotron-fluid bg-static d-flex justify-content-center flex-column">
         <div class="container">
-          <div class="row">
-            <div class="col">
-              <h1 class="display-3">Unicycles</h1>
+          <div class="row p-0">
+            <div class="col p-0">
+              <h1 class="display-3 text-center text-md-left">Unicycles</h1>
             </div>
           </div>
         </div>
@@ -89,55 +89,110 @@
     <!-- /END JUMBOTRON -->
     <div class="container">
       <div class="row">
-    <!-- START FEATURED PRODUCTS -->
-    <div class="card-group row mt-4">
-      <div class="col-md-6 col-lg-3">
+        <!-- START FEATURED PRODUCTS -->
+        <div class="card-group">     
+        <div class="col-md-6 col-lg-4 py-4">
           <div class="card h-100">
-              <img src="assets/products/unicycle/yellow-uni.png" class="card-img-top" alt="Cycle">
+              <img src="assets/products/unicycle/uni1.png" class="card-img-top" alt="Cycle">
               <div class="card-body  text-center">
-                  <h5 class="card-title">Bike Name</h5>
-                  <p class="card-text">Price</p>
-                  <button type="button" class="btn btn-primary col-12" id="carouselControl">Add to cart</button>
+                <h5 class="card-title">Bursto 20in. Unicycle </h5>
+                <p class="card-text">$74.99 </p>
+                  <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to cart</button>
               </div>
           </div>
       </div>
-      <div class="col-md-6 col-lg-3">
+      <div class="col-md-6 col-lg-4 py-4">
         <div class="card h-100">
-            <img src="assets/products/bike/yellow-bike.png" class="card-img-top" alt="Cycle">
+            <img src="assets/products/unicycle/uni2.jpg" class="card-img-top" alt="Cycle">
             <div class="card-body text-center">
-                <h5 class="card-title">Bike Name</h5>
-                <p class="card-text">Price</p>
-                <button type="button" class="btn btn-primary col-12" id="carouselControl">Add to cart</button>
+              <h5 class="card-title">B-Type Commuter</h5>
+              <p class="card-text">$230.99</p>
+                <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to cart</button>
             </div>
         </div>
     </div>
-    <div class="col-md-6 col-lg-3">
+    <div class="col-md-6 col-lg-4 py-4">
       <div class="card h-100">
-          <img src="assets/products/tricycle/yellow-trike.png" class="card-img-top" alt="Cycle">
+          <img src="assets/products/unicycle/uni3.jpg" class="card-img-top" alt="Cycle">
           <div class="card-body text-center">
-              <h5 class="card-title">Bike Name</h5>
-              <p class="card-text">Price</p>
-              <button type="button" class="btn btn-primary col-12" id="carouselControl">Add to cart</button>
+            <h5 class="card-title">Sunburst Adult Tricycle</h5>
+            <p class="card-text">$6.99</p>
+              <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to cart</button>
           </div>
       </div>
   </div>
-  <div class="col-md-6 col-lg-3">
+  <div class="col-md-6 col-lg-4 py-4">
     <div class="card h-100">
-        <img src="assets/products/accessories/yellow-helmet.png" class="card-img-top" alt="Helmet">
+        <img src="assets/products/unicycle/uni4.jpg" class="card-img-top" alt="Cycle">
         <div class="card-body text-center">
-            <h5 class="card-title">Bike Name</h5>
-            <p class="card-text">Price</p>
-            <button type="button" class="btn btn-primary col-12" id="carouselControl">Add to cart</button>
+          <h5 class="card-title">Corpora Helmet</h5>
+          <p class="card-text">$32.99</p>
+            <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to cart</button>
+        </div>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 py-4">
+    <div class="card h-100">
+        <img src="assets/products/unicycle/uni5.jpg" class="card-img-top" alt="Cycle">
+        <div class="card-body text-center">
+          <h5 class="card-title">Sunburst Adult Tricycle</h5>
+          <p class="card-text">$6.99</p>
+            <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to cart</button>
         </div>
     </div>
 </div>
+<div class="col-md-6 col-lg-4 py-4">
+  <div class="card h-100">
+      <img src="assets/products/unicycle/uni6.jpg" class="card-img-top" alt="Cycle">
+      <div class="card-body text-center">
+        <h5 class="card-title">Corpora Helmet</h5>
+        <p class="card-text">$32.99</p>
+          <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to cart</button>
+      </div>
   </div>
-  <!-- END FEATURED PRODUCTS -->
-</div>
 </div>
 
+        <!-- END FEATURED PRODUCTS -->
+      </div>
+    </div>
+
   </main>
-  <footer></footer>
+  <!-- Footer -->
+    <footer class="page-footer font-small cyan darken-3">
+    
+      <!-- Footer Elements -->
+      <div class="container">
+    
+        <!-- Grid row-->
+        <div class="row pt-5">
+            <div class="col-12 col-md-6 text-center align-self-center">
+              <a class="navbar-brand" href="index.html"><img src="assets/logo.png" alt="cycool logo"></a>
+            </div>
+    
+          <!-- Grid column -->
+          <div class="col-12 col-md-6 py-3">
+            <div class="flex-center text-center text-align-center">
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram fa-lg white-text mr-md-5 mr-3 fa-2x"> </i>
+              </a>
+            </div>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row-->
+      </div>
+    
+    </footer>
+    <!-- Footer -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
