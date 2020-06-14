@@ -29,8 +29,8 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <a class="navbar-brand d-lg-none" href="#"><img src="assets/logo.png" alt="cycools logo"></a>
-      <i class="fas fa-shopping-bag d-lg-none"></i>
+      <a class="navbar-brand d-lg-none" href="index.html"><img src="assets/logo.png" alt="cycool logo"></a>
+      <a href="cart.html"><i class="fas fa-shopping-bag d-lg-none"></i></a>
 
       <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
         <ul class="navbar-nav">
@@ -57,7 +57,7 @@
         </ul>
 
         <!-- LARGE SCREEN: CHECKOUT BAG -->
-        <a class="navbar-brand d-none d-lg-block" href="#"><img src="assets/logo-red.png" alt="cycools logo"></a>
+        <a class="navbar-brand d-none d-lg-block" href="#"><img src="assets/logo.png" alt="cycool logo"></a>
 
         <ul class="navbar-nav d-none d-lg-flex">
           <li class="nav-item">
@@ -68,7 +68,7 @@
           </li>
           <li class="nav-item align-self-center">
             <i class="fas fa-shopping-bag"></i>
-            
+
           </li>
         </ul>
       </div>
@@ -132,114 +132,100 @@
     <!-- /END JUMBOTRON -->
     <div class="container">
       <div class="row">
-    <!-- START BIKE CHOICE -->
-    <div class="row featurette align-items-center">
-      <div class="col-md-4">
-        <h2 class="featurette-heading text-center text-md-right">Unicycle</h2>
-      </div>
-      <div class="col-md-6">
-        <picture>
-          <source media="(min-width: 768px)" srcset="assets/tires/tire1.png">
-          <img src="assets/tires/tire1-c.png" alt="Two Tires" class="img-fluid mx-auto">
-        </picture>
-      </div>
-    </div>
-    <div class="row featurette align-items-center">
-      <div class="col-md-5">
-        <h2 class="featurette-heading text-center text-md-right">Bicycle</h2>
-      </div>
-      <div class="col-md-6">
-        <picture>
-          <source media="(min-width: 768px)" srcset="assets/tires/tire2.png">
-          <img src="assets/tires/tire2-c.png" alt="Two Tires" class="img-fluid mx-auto">
-        </picture>
-      </div>
-    </div>
-    <div class="row featurette align-items-center">
-      <div class="col-md-6">
-        <h2 class="featurette-heading text-center text-md-right">Tricycle</h2>
-      </div>
-      <div class="col-md-6">
-        <picture>
-          <source media="(min-width: 768px)" srcset="assets/tires/tire3.png">
-          <img src="assets/tires/tire3.png" alt="Two Tires" class="img-fluid mx-auto">
-        </picture>
-      </div>
-    </div>
-    <!-- END BIKE CHOICE -->
-    <!-- START TYPES OF BIKES -->
-    <div class="row">
-      <div class="col-md-6">
-        <img src="assets/bike_beach.jpg" class="img-fluid" alt="Bike at the beach.">
-      </div>
-      <div class="col-md-3">
-        <div class="">
-          <img src="assets/products/unicycle/silver.jpg" class="img-fluid" alt="Cycle">
+        <!-- START ANIMATED WHEEL CHOICE ----->
+        <!-- Display mobile unicycle-->
+        <div class="py-4 col-12 align-items-center d-md-none">
+          <h3 class="text-center text-md-right">Unicycle</h3>
+          <img src="assets/tires/tire.png" alt="Tire" class="rollCenter element-to-hide">
+        </div>
+        <!-- Display md unicycle-->
+        <div class="py-4 col-12 align-items-center w-100 d-none d-md-flex">
           <h3 class="text-center">Unicycle</h3>
+          <img src="assets/tires/tire.png" alt="Tire" class="rollCenter element-to-hide ml-auto">
         </div>
-        <div class="">
-          <img src="assets/products/tricycle/silver.jpg" class="img-fluid" alt="Cycle">
-          <h3 class="text-center">Tricycle</h3>
-        </div>
-      </div>
-      <div class="col-md-3 h-100">
-        <div class="">
-          <img src="assets/products/bike/blue.png" class="img-fluid" alt="Cycle">
-          <h3 class="text-center">Bicycle</h3>
-        </div>
-        <div class="">
-          <img src="assets/products/accessories/yellow.jpg" class="img-fluid" alt="Cycle">
-          <h3 class="text-center">Accessories</h3>
-        </div>
-        </div>
-      </div>
-    </div>
-    <!-- END TYPES OF BIKES -->
-    <!-- START FEATURED PRODUCTS -->
-    <div class="card-group row mt-4">
-      <div class="col-12">
-        <h2 class="text-center">Featured Products</h2>
-        </div>
-      <div class="col-md-6 col-lg-3">
-          <div class="card h-100">
-              <img src="assets/products/unicycle/yellow-uni.png" class="card-img-top" alt="Cycle">
-              <div class="card-body  text-center">
-                  <h5 class="card-title">Bike Name</h5>
-                  <p class="card-text">Price</p>
-              </div>
+
+        <!-- Display mobile bicycle-->
+        <div class="py-4 col-12 align-items-center d-md-none">
+          <h3 class="text-center text-md-right">Bicycle</h3>
+          <div class="col-12 d-flex">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollLeft element-to-hide">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollRight element-to-hide position-absolute">
           </div>
-      </div>
-      <div class="col-md-6 col-lg-3">
-        <div class="card h-100">
-            <img src="assets/products/bike/yellow-bike.png" class="card-img-top" alt="Cycle">
-            <div class="card-body text-center">
+        </div>
+        <!-- Display md bicycle -->
+        <div class="py-4 col-12 align-items-center w-100 d-none d-md-flex">
+          <h3 class="text-center">Bicycle</h3>
+          <div class="d-flex ml-auto">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollLeft element-to-hide">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollRight element-to-hide position-absolute">
+          </div>
+        </div>
+
+        <!-- Display mobile tricycle-->
+        <div class="py-4 col-12 align-items-center d-md-none">
+          <h3 class="text-center text-md-right">Tricycle</h3>
+          <div class="col-12 d-flex">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollCenter element-to-hide position-absolute">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollLeft element-to-hide">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollRight element-to-hide position-absolute">
+          </div>
+        </div>
+        <!-- Display md tricycle -->
+        <div class="py-4 col-12 align-items-center w-100 d-none d-md-flex">
+          <h3 class="text-center">Tricycle</h3>
+          <div class="d-flex ml-auto">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollCenter element-to-hide position-absolute">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollLeft element-to-hide">
+            <img src="assets/tires/tire.png" alt="Tire" class="rollRight element-to-hide position-absolute">
+          </div>
+        </div>
+        <!-- END ANIMATED WHEEL CHOICE -->
+        <!-- START FEATURED PRODUCTS -->
+        <div class="card-group mt-5">
+          <div class="col-12">
+            <h2 class="text-center">Featured Products</h2>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="assets/products/unicycle/yellow-uni.png" class="card-img-top img-fluid mx-auto" alt="Cycle">
+              <div class="card-body  text-center">
                 <h5 class="card-title">Bike Name</h5>
                 <p class="card-text">Price</p>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="col-md-6 col-lg-3">
-      <div class="card h-100">
-          <img src="assets/products/tricycle/yellow-trike.png" class="card-img-top" alt="Cycle">
-          <div class="card-body text-center">
-              <h5 class="card-title">Bike Name</h5>
-              <p class="card-text">Price</p>
           </div>
-      </div>
-  </div>
-  <div class="col-md-6 col-lg-3">
-    <div class="card h-100">
-        <img src="assets/products/accessories/yellow-helmet.png" class="card-img-top" alt="Helmet">
-        <div class="card-body text-center">
-            <h5 class="card-title">Bike Name</h5>
-            <p class="card-text">Price</p>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="assets/products/bike/yellow-bike.png" class="card-img-top img-fluid mx-auto" alt="Cycle">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bike Name</h5>
+                <p class="card-text">Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="assets/products/tricycle/yellow-trike.png" class="card-img-top img-fluid mx-auto" alt="Cycle">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bike Name</h5>
+                <p class="card-text">Price</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card h-100">
+              <img src="assets/products/accessories/yellow-helmet.png" class="card-img-top img-fluid mx-auto"
+                alt="Helmet">
+              <div class="card-body text-center">
+                <h5 class="card-title">Bike Name</h5>
+                <p class="card-text">Price</p>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- END FEATURED PRODUCTS -->
+      </div>
     </div>
-</div>
-  </div>
-  <!-- END FEATURED PRODUCTS -->
-</div>
-</div>
 
   </main>
   <footer></footer>

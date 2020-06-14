@@ -10,8 +10,17 @@ h2 {
     font-size: 4rem;
 }
 
+.h3,
+h3 {
+    font-size: 3rem;
+}
+
 p {
     font-family: 'Open Sans', sans-serif;
+}
+
+.row {
+    margin: 0px;
 }
 
 /* START NAVBAR */
@@ -23,13 +32,18 @@ p {
     height: 35px;
 }
 
+.navbar-brand {
+    margin: 0px;
+}
+
 .bg-light {
     background-color: #fff !important;
 }
 
-.dropdown-menu{
+.dropdown-menu {
     border: 0px;
 }
+
 /* END NAVBAR */
 
 /* START JUMBOTRON */
@@ -37,10 +51,11 @@ p {
     background-image: url(assets/uni-trick.jpg);
     height: 330px;
     background-position: bottom bottom;
-background-size: cover;
-background-attachment: fixed;
-background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+
 /* END JUMBOTRON */
 
 .carousel-indicators li {
@@ -49,15 +64,9 @@ background-repeat: no-repeat;
     height: 10px;
 }
 
-.position-absolute {
-    position: absolute !important;
-    top: 30px;
-    left: 30px;
-}
-
 /* CARD START */
 .card {
-    
+
     border: none;
     margin: 15px;
 }
@@ -76,3 +85,158 @@ background-repeat: no-repeat;
     border: 2px solid #d92929;
     color: white;
 }
+
+/* WHEEL ANIMATION START */
+/* WHEEL roll */
+.element-to-hide {
+    visibility: hidden;
+}
+
+.rollRight,
+.rollLeft,
+.rollCenter {
+    height: 30vh;
+}
+
+.right-absolute {
+    position: absolute !important;
+    top: 0px;
+    right: 35px;
+}
+
+.left-absolute {
+    position: absolute !important;
+    top: 0px;
+    right: 70px;
+}
+
+.center-absolute {
+    position: absolute !important;
+    top: 0px;
+    right: 95px;
+}
+
+.rollRight {
+    visibility: visible;
+    animation-name: rollRight;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rollRight {
+    0% {
+        transform: translateX(-150%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(60%) rotate(360deg);
+    }
+}
+
+.rollCenter {
+    visibility: visible;
+    animation-name: rollCenter;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rollCenter {
+    0% {
+        transform: translateX(-400%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(25%) rotate(360deg);
+    }
+}
+
+.rollLeft {
+    visibility: visible;
+    animation-name: rollLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rollLeft {
+    0% {
+        transform: translateX(150%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-20%) rotate(-360deg);
+    }
+}
+
+/* WHEEL ANIMATION END */
+
+/* MEDIA QUIREIES ----------------------------------------- */
+@media (min-width: 768px) {
+
+    .h3,
+    h3 {
+        font-size: 10rem;
+    }
+
+    .h2,
+    h2 {
+        font-size: 4rem;
+    }
+
+    /* WHEEL ANIMATION START */
+    /* WHEEL roll */
+    .rollRight,
+    .rollLeft,
+    .rollCenter {
+        height: 30vh;
+    }
+
+    @keyframes rollCenter {
+        0% {
+            transform: translateX(-400%) rotate(0deg);
+        }
+
+        100% {
+            transform: translateX(0%) rotate(360deg);
+        }
+    }
+
+    @keyframes rollRight {
+        0% {
+            transform: translateX(-400%) rotate(0deg);
+        }
+
+        100% {
+            transform: translateX(30%) rotate(360deg);
+        }
+    }
+
+    @keyframes rollLeft {
+        0% {
+            transform: translateX(-400%) rotate(0deg);
+        }
+
+        100% {
+            transform: translateX(-35%) rotate(-360deg);
+        }
+    }
+
+    /* WHEEL ANIMATION END */
+
+    .h3,
+    h3 {
+        font-size: 5rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .h3,
+    h3 {
+        font-size: 9rem;
+    }
+}
+
+@media (min-width: 1200px) {}
