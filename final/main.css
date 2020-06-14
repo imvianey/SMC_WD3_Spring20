@@ -66,16 +66,30 @@ a:hover {
     color: #212529;
 }
 
+.fa-shopping-cart::before {
+    font-size: 1.5rem;
+}
+
+.cart-badge{
+    position: absolute;
+    top: -1px;
+    left: 12px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+
 /* END NAVBAR */
 
 /* START JUMBOTRON */
 .uni .jumbotron {
     background-image: url(assets/uni-trick.jpg);
     height: 330px;
-    background-position: bottom bottom;
+    background-position: bottom;
     background-size: cover;
-    background-attachment: fixed;
     background-repeat: no-repeat;
+
 }
 
 /* END JUMBOTRON */
