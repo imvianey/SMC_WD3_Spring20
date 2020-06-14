@@ -91,14 +91,26 @@ a:hover {
     text-shadow: -4px 4px 9px #0d0106;
 }
 
+.jumbotron{
+    margin-top: 60px;
+}
+
 .uni .jumbotron {
     background-image: url(assets/uni-trick.jpg);
     height: 330px;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
+
+.bike .jumbotron {
+    background-image: url(assets/bike-brick.jpg);
+    height: 330px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /* END JUMBOTRON */
 
@@ -123,14 +135,14 @@ a:hover {
 }
 
 .btn-primary:hover {
-    background-color: #d92929;
+    background-color: #3da5d9;
     border-radius: 0px;
     border: 2px solid #0d0106;
     color: white;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
-    background-color: #d92929;
+    background-color: #3da5d9;
     border-radius: 0px;
     border: 2px solid #0d0106;
     color: white;
