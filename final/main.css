@@ -91,7 +91,7 @@ a:hover {
     text-shadow: -4px 4px 9px #0d0106;
 }
 
-.jumbotron{
+main{
     margin-top: 60px;
 }
 
@@ -135,37 +135,54 @@ a:hover {
     margin: 15px;
 }
 
-.btn-primary {
+.btn-primary:hover {
     background-color: transparent;
     border-radius: 0px;
-    border: 2px solid #0d0106;
+    border: 3px solid #3da5d9;
     color: #0d0106;
 }
 
-.btn-primary:hover {
+.btn-primary {
     background-color: #3da5d9;
     border-radius: 0px;
-    border: 2px solid #0d0106;
+    border: 3px solid #0d0106;
     color: white;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
     background-color: #3da5d9;
     border-radius: 0px;
-    border: 2px solid #0d0106;
+    border: 3px solid #0d0106;
     color: white;
 }
 
 .btn-primary.focus, .btn-primary:focus {
     background-color: transparent;
     border-radius: 0px;
-    border: 2px solid #0d0106;
+    border: 3px solid #0d0106;
     color: #0d0106;
     box-shadow: 0 0 0 .2rem rgba(219, 43, 41, .3);
 }
 
 .btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show > .btn-primary.dropdown-toggle:focus {
     box-shadow: 0 0 0 .2rem rgba(219, 43, 41, .3);
+}
+
+.btn-secondary {
+    color: #0d0106;
+    background-color: #fff;
+}
+
+.btn-secondary:hover {
+    color: #fff;
+    background-color: #0d0106;
+    border-color: #0d0106;
+}
+
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child), .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text {
+    border: 2px solid;
+    outline: 3px solid black;
+    outline-offset: -2px;
 }
 
 /* WHEEL ANIMATION START */
@@ -251,8 +268,62 @@ a:hover {
         transform: translateX(-20%) rotate(-360deg);
     }
 }
-
 /* WHEEL ANIMATION END */
+
+/* SHOPPING CART START */
+.shopping-cart{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.shopping-cart .product{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.shopping-cart .items .product .info{
+	padding-top: 0px;
+	text-align: center;
+}
+
+.shopping-cart .items .product .info .product-name{
+	font-weight: 600;
+}
+
+.shopping-cart .items .product .info .product-name .product-info{
+	font-size: 14px;
+	margin-top: 15px;
+}
+
+.shopping-cart .items .product .info .product-name .product-info .value{
+	font-weight: 400;
+}
+
+.shopping-cart .items .product .info .quantity .quantity-input{
+    margin: auto;
+    width: 80px;
+}
+
+.shopping-cart .items .product .info .price{
+	margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+ }
+
+.shopping-cart .total{
+    background-color: #f7fbff;
+    height: 100%;
+    padding: 30px;
+}
+
+.shopping-cart .total .total-item:not(:last-of-type){
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.shopping-cart .total .price{
+	font-size: 1em;
+	float: right;
+}
+/* SHOPPING CART END */
 
 /* MEDIA QUIREIES ----------------------------------------- */
 @media (min-width: 576px) {
