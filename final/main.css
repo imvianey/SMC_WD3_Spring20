@@ -97,7 +97,7 @@ a:hover {
 
 .uni .jumbotron {
     background-image: url(assets/uni-trick.jpg);
-    height: 330px;
+    height: 400px;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -105,7 +105,15 @@ a:hover {
 
 .bike .jumbotron {
     background-image: url(assets/bike-brick.jpg);
-    height: 330px;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.trike .jumbotron {
+    background-image: url(assets/trike-red.png);
+    height: 400px;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
