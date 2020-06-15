@@ -15,7 +15,7 @@ h3 {
     font-size: 3rem;
 }
 
-p, a{
+.h6, h6, p, a, span{
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -324,6 +324,28 @@ main{
 	float: right;
 }
 /* SHOPPING CART END */
+/* CHECKOUT START */
+.checkout .row{
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    background-color: #fff;
+    border: 0px none;
+}
+
+.checkout .list-group{
+    border: 2px solid #0d0106;
+}
+
+.font-weight-bold{
+    font-size: 1.2rem;
+}
+/* CHECKOUT END */
 
 /* MEDIA QUIREIES ----------------------------------------- */
 @media (min-width: 576px) {
