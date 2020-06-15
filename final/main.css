@@ -119,6 +119,14 @@ main{
     background-repeat: no-repeat;
 }
 
+.blog .jumbotron {
+    background-image: url(assets/big-wheel.jpg);
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 
 /* END JUMBOTRON */
 
@@ -389,6 +397,43 @@ main{
 }
 /* CHECKOUT END */
 
+/* BLOG START */
+.blog .accordion .btn-link {
+    color: #0d0106;
+    text-decoration: none;
+}
+
+.blog .accordion .btn-link:hover {
+    color: #0d0106;
+    text-decoration: none;
+}
+
+.blog .h2, .blog h2{
+    font-size: 2rem;
+}
+
+.blog .h4, .blog h4{
+    font-size: 1rem;
+}
+.blog .card-header {
+    background-color: rgba(122, 213, 220);
+}
+
+.blog .card-body {
+    border: 4px solid rgb(122, 213, 220);
+}
+/* BLOG END */
+
+/* FOOTER START */
+.fa-2x {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.page-footer{
+    background-color: #0d0106;
+}
+/* FOOTER END */
 /* MEDIA QUIREIES ----------------------------------------- */
 @media (min-width: 576px) {
     @keyframes rollCenter {

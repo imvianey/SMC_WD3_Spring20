@@ -43,4 +43,13 @@ $(document).ready(function () {
             $('#inputState-billing option[value=""]').attr('selected', 'selected');
         };
     });
+
+    // BLOG COLLAPSE
+    $('.collapse').collapse('hide') 
+
+        $(".toggle-btn").click(function(){
+            $("#myCollapsible").collapse('toggle');
+        });
+
+
 });
