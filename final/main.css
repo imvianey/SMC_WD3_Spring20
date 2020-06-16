@@ -60,6 +60,7 @@ a:hover {
 
 .navbar-brand img {
     height: 35px;
+    position: sticky;
 }
 
 .navbar-brand {
@@ -157,6 +158,38 @@ main {
     border-radius: 50%;
     width: 10px;
     height: 10px;
+}
+
+.carousel-1 .carousel-caption{
+    position: absolute;
+    right: 34%;
+    top: 1%;
+    left: 4%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.carousel-3 .carousel-caption {
+    position: absolute;
+    right: 55%;
+    top: -3px;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: left;
+}
+
+.carousel-1 .carousel-caption h5 {
+    font-size: 5.6vw;
+}
+
+.carousel-3 .carousel-caption h5 {
+    font-size: 5.5vw;
 }
 
 /* CARD START */
@@ -638,6 +671,18 @@ footer .fa-2x {
             transform: translateX(18%) rotate(-360deg);
         }
     }
+    .carousel-caption{
+        position: absolute;
+        right: 34%;
+        top: 13%;
+        left: 4%;
+        z-index: 10;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        color: #fff;
+        text-align: center;
+    }
+    
 }
 
 @media (min-width: 768px) {
