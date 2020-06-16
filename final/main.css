@@ -30,7 +30,7 @@ a:hover {
 }
 
 .row {
-    margin: 0px;
+    margin: none;
 }
 
 /* START NAVBAR */
@@ -125,6 +125,16 @@ main{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+.location .jumbotron {
+    background-image: url(assets/bike_whitewall.png);
+    height: 400px;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    margin-bottom: 0px;
 }
 
 
@@ -320,6 +330,16 @@ main{
 }
 /* ACCORDION END */
 
+/* LOCATION START */
+.location h2{
+    font-size: 3rem;
+}
+
+.logo{
+    width: 170px;
+}
+/* LOCATION END */
+
 /* SHOPPING CART START */
 .shopping-cart{
     font-family: 'Open Sans', sans-serif;
@@ -425,7 +445,7 @@ main{
 /* BLOG END */
 
 /* FOOTER START */
-.fa-2x {
+footer .fa-2x {
     font-size: 1.5em;
     color: #fff;
 }
