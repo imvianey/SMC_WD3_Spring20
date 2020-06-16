@@ -29,6 +29,10 @@ a:hover {
     text-decoration: none;
 }
 
+.card a{
+    color: #0d0106;
+}
+
 .row {
     margin: none;
 }
@@ -288,6 +292,11 @@ main{
 }
 /* WHEEL ANIMATION END */
 
+/* ANIMATION SCALE IMAGE */
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+/* END ANIMATION SCALE IMAGE */
+
 /* ACCORDION START */
   .custom-accordion {
     background: #7ad5dc;
@@ -476,6 +485,12 @@ footer .fa-2x {
     /* When the radio button is checked, add a blue background */
   .uni input:checked ~ .checkmark {
     background-color: #FCD531;
+  }
+  .bike input:checked ~ .checkmark {
+    background-color: #67caa3;
+  }
+  .trike input:checked ~ .checkmark {
+    background-color: #212529;
   }
   
     /* Create the indicator (the dot/circle - hidden when not checked) */
