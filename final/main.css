@@ -45,11 +45,13 @@ a:hover {
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link {
     color: #0d0106;
+    letter-spacing: 1px;
 }
 
-.navbar-light .navbar-nav .nav-link:focus,
+
 .navbar-light .navbar-nav .nav-link:hover {
     color: #d92929;
+    font-weight: 600;
 }
 
 .dropdown-toggle::after {
@@ -167,21 +169,24 @@ main {
 .btn-primary:hover {
     background-color: transparent;
     border-radius: 0px;
-    border: 3px solid #3da5d9;
+    border: 3px solid #d92929;
     color: #0d0106;
 }
 
 .btn-primary {
-    background-color: #3da5d9;
+    background-color: #d92929;
     border-radius: 0px;
-    border: 3px solid #0d0106;
+    border: 3px solid #d92929;
     color: white;
+    width: 75%;
+    text-transform: capitalize;
+    margin: auto;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show>.btn-primary.dropdown-toggle {
-    background-color: #3da5d9;
+    background-color: #d92929;
     border-radius: 0px;
     border: 3px solid #0d0106;
     color: white;
@@ -211,6 +216,18 @@ main {
     color: #fff;
     background-color: #0d0106;
     border-color: #0d0106;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #d92929;
+}
+
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #d92929;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 .input-group>.input-group-append>.btn,
@@ -526,10 +543,10 @@ footer .fa-2x {
 /* FOOTER END */
 /* PRODUCT START */
 /* Hide the browser's default radio button */
-.container input {
+.form-check-input {
     position: absolute;
-    opacity: 0;
-    cursor: pointer;
+    margin-top: .3rem;
+    margin-left: 0rem;
 }
 
 /* Create a custom radio button */
