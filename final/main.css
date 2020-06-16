@@ -166,7 +166,7 @@ a:hover {
     height: 10px;
 }
 
-.carousel-1 .carousel-caption{
+.carousel-1 .carousel-caption {
     position: absolute;
     right: 34%;
     top: 1%;
@@ -257,13 +257,15 @@ a:hover {
     border-color: #0d0106;
 }
 
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
     color: #fff;
     text-decoration: none;
     background-color: #d92929;
 }
 
-.dropdown-item:focus, .dropdown-item:hover {
+.dropdown-item:focus,
+.dropdown-item:hover {
     color: #d92929;
     text-decoration: none;
     background-color: transparent;
@@ -280,7 +282,7 @@ a:hover {
     outline-offset: -2px;
 }
 
-.summer{
+.summer {
     top: 12%;
     right: -6%;
     font-size: 6vw;
@@ -687,7 +689,8 @@ footer .fa-2x {
             transform: translateX(18%) rotate(-360deg);
         }
     }
-    .carousel-caption{
+
+    .carousel-caption {
         position: absolute;
         right: 34%;
         top: 13%;
@@ -698,7 +701,7 @@ footer .fa-2x {
         color: #fff;
         text-align: center;
     }
-    
+
 }
 
 @media (min-width: 768px) {
@@ -771,10 +774,10 @@ footer .fa-2x {
         animation: text 3s 1;
     }
 
-    .summer{
+    .summer {
         top: 13%;
-right: -13%;
-font-size: 6vw;
+        right: -13%;
+        font-size: 6vw;
     }
 
     @media screen and (min-width: 800px) and (min-height: 270px) {
