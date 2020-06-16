@@ -22,7 +22,7 @@
 <body>
   <header>
     <!-- START NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light absolute-top">
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle"
         aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,12 +83,13 @@
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active carousel-1">
           <img src="assets/carousel/wheel-color.jpg" class="d-block w-100" alt="Bike wheel">
           <div class="carousel-caption">
-            <h5>Ready to stand out!  Choose your color.</h5>
+            <h5>You'll wheely like this! Choose your color.</h5>
           </div>
         </div>
         <div class="carousel-item carousel-2">
@@ -101,6 +102,9 @@
           <div class="carousel-caption">
             <h5>Try out new a new wheel!</h5>
           </div>
+        </div>
+        <div class="carousel-item carousel-4">
+          <img src="assets/carousel/bike-girl.jpg" class="d-block w-100" alt="Girl on a bike.">
         </div>
       </div>
       <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -200,67 +204,71 @@
     <!-- END ANIMATED WHEEL CHOICE -->
 
 
+    <div class="container py-5">
+      <div class="row">
 
-    <!-- START FEATURED PRODUCTS -->
-    <div class="card-group mt-5">
-      <div class="col-12">
-        <h2 class="text-center">Featured Products</h2>
-      </div>
-
-      <div class="col-md-6 py-4">
-        <div class="card h-100">
-          <a href="product-uni.html"><img src="assets/products/unicycle/yellow-uni.png" class="card-img-top grow"
-              alt="Cycle">
-            <div class="card-body  text-center">
-              <h5 class="card-title">Bursto Unicycle </h5>
-              <p class="card-text">$74.99 </p>
-          </a>
-          <button type="button" class="btn btn-primary col-12 mt-3 addcart add-to-cart" id="carouselControl">Add to
-            cart</button>
+        <div class="col-11 pt-4 position-relative">
+          <img src="assets/bike-beach.jpg" alt="bike beach" class="img-fluid" alt="Responsive image">
+          <h2 class="text-right text-md-center summer position-absolute">Get Ready For Summer!</h2>
         </div>
-      </div>
-    </div>
-    <div class="col-md-6 py-4">
-      <div class="card h-100">
-        <a href="product-bike-yellow.html"><img src="assets/products/bike/yellow-bike.png" class="card-img-top grow"
-            alt="Cycle">
-          <div class="card-body text-center">
-            <h5 class="card-title">Sunny B Bicycle</h5>
-            <p class="card-text">$230.99</p>
-        </a>
-        <button type="button" class="btn btn-primary col-12 mt-3 addcart add-to-cart" id="carouselControl">Add to
-          cart</button>
-      </div>
-    </div>
-    </div>
-    <div class="col-md-6 py-4">
-      <div class="card h-100">
-        <a href="product-trike-yellow.html"><img src="assets/products/tricycle/yellow-trike.png"
-            class="card-img-top grow" alt="Cycle">
-          <div class="card-body text-center">
-            <h5 class="card-title">Sunburst Adult Tricycle</h5>
-            <p class="card-text">$379.99</p>
-        </a>
-        <button type="button" class="btn btn-primary col-12 addcart mt-3 add-to-cart" id="carouselControl">Add to
-          cart</button>
-      </div>
-    </div>
-    </div>
-    <div class="col-md-6 py-4">
-      <div class="card h-100">
-        <img src="assets/products/accessories/yellow-helmet.png" class="card-img-top grow" alt="Helmet">
-        <div class="card-body text-center">
-          <h5 class="card-title">Corpora Helmet</h5>
-          <p class="card-text">$32.99</p>
-          <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to
-            cart</button>
+        
+        <!-- START FEATURED PRODUCTS -->          
+        <div class="card-group">   
+          <div class="col-md-6 py-4">
+            <div class="card h-100">
+              <a href="product-uni.html"><img src="assets/products/unicycle/yellow-uni.png" class="card-img-top grow"
+                  alt="Cycle">
+                <div class="card-body  text-center">
+                  <h5 class="card-title">Bursto Unicycle </h5>
+                  <p class="card-text">$74.99 </p>
+              </a>
+              <button type="button" class="btn btn-primary col-12 mt-3 addcart add-to-cart" id="carouselControl">Add to
+                cart</button>
+            </div>
+          </div>
         </div>
-      </div>
-    </div>
+        <div class="col-md-6 py-4">
+          <div class="card h-100">
+            <a href="product-bike-yellow.html"><img src="assets/products/bike/yellow-bike.png" class="card-img-top grow"
+                alt="Cycle">
+              <div class="card-body text-center">
+                <h5 class="card-title">Sunny B Bicycle</h5>
+                <p class="card-text">$230.99</p>
+            </a>
+            <button type="button" class="btn btn-primary col-12 mt-3 addcart add-to-cart" id="carouselControl">Add to
+              cart</button>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6 py-4">
+          <div class="card h-100">
+            <a href="product-trike-yellow.html"><img src="assets/products/tricycle/yellow-trike.png"
+                class="card-img-top grow" alt="Cycle">
+              <div class="card-body text-center">
+                <h5 class="card-title">Canary Adult Tricycle</h5>
+                <p class="card-text">$379.99</p>
+            </a>
+            <button type="button" class="btn btn-primary col-12 addcart mt-3 add-to-cart" id="carouselControl">Add to
+              cart</button>
+          </div>
+        </div>
+        </div>
+        <div class="col-md-6 py-4">
+          <div class="card h-100">
+            <img src="assets/products/accessories/yellow-helmet.png" class="card-img-top grow" alt="Helmet">
+            <div class="card-body text-center">
+              <h5 class="card-title">Corpora Helmet</h5>
+              <p class="card-text">$32.99</p>
+              <button type="button" class="btn btn-primary col-12 addcart add-to-cart" id="carouselControl">Add to
+                cart</button>
+            </div>
+          </div>
+        </div>
 
-    <!-- END FEATURED PRODUCTS -->
+      <!-- END FEATURED PRODUCTS -->
     </div>
-    </div>
+  </div>
+
 
   </main>
   <!-- Footer -->

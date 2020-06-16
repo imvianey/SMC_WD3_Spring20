@@ -105,14 +105,10 @@ a:hover {
     text-shadow: -4px 4px 9px #0d0106;
 }
 
-main {
-    margin-top: 60px;
-}
-
 .uni .jumbotron {
-    background-image: url(assets/uni-trick.jpg);
+    background-image: url(assets/uni-room.png);
     height: 400px;
-    background-position: bottom;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -272,6 +268,15 @@ main {
     border: 2px solid;
     outline: 3px solid black;
     outline-offset: -2px;
+}
+
+.summer{
+    top: 12%;
+    right: -6%;
+    font-size: 6vw;
+    background-color: #d92929;
+    color: #fff;
+    padding: 20px;
 }
 
 /* WHEEL ANIMATION START */
@@ -719,7 +724,7 @@ footer .fa-2x {
         }
 
         100% {
-            transform: translateX(0%) rotate(360deg);
+            transform: translateX(-2%) rotate(360deg);
         }
     }
 
@@ -729,7 +734,7 @@ footer .fa-2x {
         }
 
         100% {
-            transform: translateX(30%) rotate(360deg);
+            transform: translateX(28%) rotate(360deg);
         }
     }
 
@@ -753,6 +758,12 @@ footer .fa-2x {
         margin-bottom: 0px;
         position: relative;
         animation: text 3s 1;
+    }
+
+    .summer{
+        top: 13%;
+right: -13%;
+font-size: 6vw;
     }
 
     @media screen and (min-width: 800px) and (min-height: 270px) {
