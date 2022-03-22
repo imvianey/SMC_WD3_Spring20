@@ -188,6 +188,10 @@ p {
     border-radius: 0;
 }
 
+p a{
+    color: #bc2328;
+}
+
 /* CAROUSEL START */
 .carousel-caption {
     font-family: 'Fredoka One', arial, cursive;
